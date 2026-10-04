@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Lumia — Projet Alder</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./lumia.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit}a:hover{color:inherit}
+</style>
+</helmet>
+<div class="lm {{themeClass}}" style="min-height: 100vh; display: flex; flex-wrap: wrap; align-items: stretch">
+
+<aside class="side" style="flex: 0 0 256px; min-width: 0; display: flex; flex-direction: column; gap: 22px; padding: 12px 10px 14px 12px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 6px">
+<button class="ws" type="button" aria-label="Changer d’espace de travail">
+<svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg>
+<span style="font-size: 13.5px; font-weight: 600; letter-spacing: -.01em">Groupe Sérac</span>
+<svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--ink-3)"><path d="m8 10 4 4 4-4"></path></svg>
+</button>
+<button class="btn btn-icon btn-ghost" type="button" aria-label="Replier la barre latérale"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"></rect><path d="M9.5 4.5v15"></path></svg></button>
+</div>
+<nav class="nav" aria-label="Navigation principale">
+<a class="nav-item" href="Main.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg><span class="label">Nouvelle conversation</span><span class="kbd">⌘N</span></a>
+<a class="nav-item" href="Palette.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m20 20-4.2-4.2"></path></svg><span class="label">Rechercher</span><span class="kbd">⌘K</span></a>
+<a class="nav-item" href="Projet.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5a2 2 0 0 1 2-2h3.6l2 2h7.4a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"></path></svg><span class="label">Projets</span></a>
+<a class="nav-item" href="Bibliotheque.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 4 8.5 4.5L12 13 3.5 8.5z"></path><path d="m3.5 12.5 8.5 4.5 8.5-4.5"></path><path d="m3.5 16.5 8.5 4.5 8.5-4.5"></path></svg><span class="label">Bibliothèque</span></a>
+<a class="nav-item" href="Automatisations.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg><span class="label">Automatisations</span><span class="count">5</span></a>
+<a class="nav-item" href="Connecteurs.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3.5v4M15 3.5v4"></path><path d="M6.5 7.5h11v3a5.5 5.5 0 0 1-11 0z"></path><path d="M12 16v4.5"></path></svg><span class="label">Connecteurs</span></a>
+</nav>
+<div style="display: flex; flex-direction: column; gap: 1px">
+<div class="side-label">Épinglés</div>
+<a class="recent is-active" href="Projet.dc.html" aria-current="page"><span class="tile">A</span><span class="label">Projet Alder</span></a>
+<a class="recent" href="Projet.dc.html"><span class="tile">C</span><span class="label">Comité de direction</span></a>
+<a class="recent" href="Projet.dc.html"><span class="tile">V</span><span class="label">Voix du client</span></a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 1px; min-height: 0">
+<div class="side-label">Récents</div>
+<a class="recent" href="Work.dc.html"><span class="label">Dossier du comité d’investissement</span><svg class="mark mark-xs is-live" viewBox="0 0 24 24" aria-label="En cours"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg></a>
+<a class="recent" href="#"><span class="label">Revue des contrats fournisseurs</span><span class="dot dot-wait" aria-label="Validation attendue"></span></a>
+<a class="recent" href="Conversation.dc.html"><span class="label">Synthèse des entretiens clients T3</span></a>
+<a class="recent" href="Livrable.dc.html"><span class="label">Note au comité — Alder</span></a>
+<a class="recent" href="#"><span class="label">Benchmark tarifaire Europe du Nord</span></a>
+<a class="recent" href="#"><span class="label">Préparation du séminaire de rentrée</span></a>
+<a class="recent" href="#"><span class="label">Réponse à l’appel d’offres Ardent</span></a>
+<a class="recent" href="#"><span class="label">Plan stratégique 2027 — cadrage</span></a>
+</div>
+<div class="me" style="margin-top: auto">
+<span class="av av-ink">CA</span>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column">
+<span style="font-size: 13px; font-weight: 550">Camille Arnaud</span>
+<span class="ellipsis" style="font-size: 12px; color: var(--ink-3)">Direction de la stratégie</span>
+</div>
+<a class="btn btn-icon btn-ghost" href="Administration.dc.html" aria-label="Réglages"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"></path><circle cx="16" cy="7" r="2"></circle><circle cx="10" cy="17" r="2"></circle></svg></a>
+</div>
+</aside>
+
+<main class="sheet" style="flex: 999 1 560px; margin: 8px 8px 8px 0; height: calc(100vh - 16px); min-height: 640px">
+<header class="bar">
+<div style="display: flex; align-items: center; gap: 12px; min-width: 0">
+<div class="crumb"><a href="#">Projets</a><span class="sep">/</span><strong>Projet Alder</strong></div>
+<span class="tag"><svg class="i i-xs" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="11" width="12" height="9" rx="1.5"></rect><path d="M8.5 11V8.5a3.5 3.5 0 0 1 7 0V11"></path></svg>Confidentiel</span>
+</div>
+<div style="display: flex; align-items: center; gap: 4px">
+<button class="btn btn-ghost btn-sm" type="button"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"></path><circle cx="16" cy="7" r="2"></circle><circle cx="10" cy="17" r="2"></circle></svg>Paramètres</button>
+<button class="btn btn-line btn-sm" type="button"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>Inviter</button>
+</div>
+</header>
+
+<div style="flex: 1; min-height: 0; overflow-y: auto">
+<div style="padding: 34px 40px 0; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 620px">
+<p class="eyebrow">Fusions &amp; acquisitions</p>
+<h1 class="h1" style="font-size: 36px; letter-spacing: -.03em">Projet Alder</h1>
+<p class="lead">Acquisition de 70 % du capital d’Alder Ventilation. Comité d’investissement le jeudi 8 octobre.</p>
+</div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap">
+<a class="btn btn-line" href="Main.dc.html"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H10l-4 3.5v-3.5a1.5 1.5 0 0 1-1.5-1.5z"></path></svg>Nouvelle conversation</a>
+<a class="btn btn-primary" href="Work.dc.html"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>Confier une tâche</a>
+</div>
+</div>
+<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap">
+<div class="stack"><span class="av av-sm av-ink">CA</span><span class="av av-sm">JM</span><span class="av av-sm">HV</span><span class="av av-sm">TL</span><span class="av av-sm">SB</span><span class="av av-sm">MD</span></div>
+<span class="small muted">6 membres</span>
+<span class="vsep"></span>
+<span class="small muted">Créé par Camille Arnaud le 14 septembre</span>
+</div>
+<div class="tabs">
+<a class="tab on" href="#">Vue d’ensemble</a>
+<a class="tab" href="#">Conversations <span class="count">12</span></a>
+<a class="tab" href="#">Tâches <span class="count">5</span></a>
+<a class="tab" href="#">Fichiers <span class="count">23</span></a>
+<a class="tab" href="Bibliotheque.dc.html">Livrables <span class="count">4</span></a>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 36px; padding: 26px 40px 40px">
+<div style="flex: 999 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 30px">
+
+<section style="display: flex; flex-direction: column; gap: 10px" aria-labelledby="maintenant">
+<h2 id="maintenant" class="eyebrow">En ce moment</h2>
+<a class="card" href="Work.dc.html" style="display: flex; align-items: center; gap: 16px; padding: 16px 18px; box-shadow: var(--e2)">
+<svg class="mark mark-lg is-live" viewBox="0 0 24 24" aria-label="En cours"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<span class="row-title">Dossier du comité d’investissement</span>
+<span class="row-meta">Rédaction de la note · étape 4 sur 6 · lancée par Camille à 09:14</span>
+</span>
+<span style="display: flex; flex-direction: column; align-items: flex-end; gap: 7px">
+<span class="progress is-live" style="width: 140px"><span style="width: 58%"></span></span>
+<span class="xs muted">Environ 15 min restantes</span>
+</span>
+</a>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 6px" aria-labelledby="recemment">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<h2 id="recemment" class="eyebrow">Récemment</h2>
+<div class="seg" role="group" aria-label="Filtrer">
+<button class="on" type="button" aria-pressed="true">Tout</button>
+<button type="button" aria-pressed="false">Conversations</button>
+<button type="button" aria-pressed="false">Tâches</button>
+</div>
+</div>
+<div class="rows" style="margin-top: 6px">
+<a class="row" href="Livrable.dc.html">
+<span class="tile tile-md"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l4.5 4.5v11.5a1 1 0 0 1-1 1H7a1.5 1.5 0 0 1-1.5-1.5v-14A1.5 1.5 0 0 1 7 3.5z"></path><path d="M14 3.5V8h4.5M9 13h6M9 16.5h4"></path></svg></span>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="row-title ellipsis">Note au comité d’investissement · v3</span><span class="row-meta">Livrable · mis à jour par Lumia</span></span>
+<svg class="mark mark-sm" viewBox="0 0 24 24" aria-label="Lumia"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg>
+<span class="xs muted tnum" style="width: 52px; text-align: right">10:42</span>
+</a>
+<a class="row" href="Conversation.dc.html">
+<span class="tile tile-md"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H10l-4 3.5v-3.5a1.5 1.5 0 0 1-1.5-1.5z"></path></svg></span>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="row-title ellipsis">Valorisation : hypothèses de croissance</span><span class="row-meta">Conversation · Thomas Leclerc</span></span>
+<span class="av av-sm">TL</span>
+<span class="xs muted" style="width: 52px; text-align: right">Hier</span>
+</a>
+<a class="row" href="Conversation.dc.html">
+<span class="tile tile-md"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H10l-4 3.5v-3.5a1.5 1.5 0 0 1-1.5-1.5z"></path></svg></span>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="row-title ellipsis">Due diligence juridique : questions ouvertes</span><span class="row-meta">Conversation · Sophie Bénard</span></span>
+<span class="av av-sm">SB</span>
+<span class="xs muted" style="width: 52px; text-align: right">Hier</span>
+</a>
+<a class="row" href="#">
+<span class="tile tile-md"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></span>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="row-title ellipsis">Analyse des douze contrats clients</span><span class="row-meta">Tâche terminée · 12 fichiers analysés, 3 clauses signalées</span></span>
+<span class="av av-sm av-ink">CA</span>
+<span class="xs muted" style="width: 52px; text-align: right">Lundi</span>
+</a>
+<a class="row" href="#">
+<span class="tile tile-md"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2"></rect><path d="M3.5 9.5h17M3.5 14.5h17M9.5 9.5v10"></path></svg></span>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="row-title ellipsis">Comparables sectoriels</span><span class="row-meta">Tableur · Marc Delorme</span></span>
+<span class="av av-sm">MD</span>
+<span class="xs muted" style="width: 52px; text-align: right">2 oct.</span>
+</a>
+</div>
+</section>
+</div>
+
+<div style="flex: 1 1 300px; max-width: 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<section class="card" style="padding: 18px 20px; display: flex; flex-direction: column; gap: 12px" aria-labelledby="instructions">
+<div style="display: flex; align-items: center; justify-content: space-between"><h2 id="instructions" class="h3">Instructions du projet</h2><button class="btn btn-ghost btn-sm" type="button" style="margin-right: -8px">Modifier</button></div>
+<p class="small soft" style="line-height: 1.6">Rédige en français, sur un ton factuel et sobre. Exprime les montants en M€ avec une décimale. Cite systématiquement la page source. Ne partage aucune information en dehors des membres du projet.</p>
+<p class="xs muted">S’appliquent à chaque conversation et tâche du projet.</p>
+</section>
+
+<section class="card" style="padding: 18px 20px 12px; display: flex; flex-direction: column; gap: 12px" aria-labelledby="connaissances">
+<div style="display: flex; align-items: center; justify-content: space-between"><h2 id="connaissances" class="h3">Connaissances</h2><span class="xs muted">23 fichiers</span></div>
+<div style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 9px; background: var(--sunken); box-shadow: inset 0 0 0 1px var(--line)">
+<span class="tile">Sp</span>
+<span class="xs soft" style="flex: 1">SharePoint « Data room Alder »</span>
+<span class="xs muted" style="display: flex; align-items: center; gap: 5px"><span class="dot dot-done" style="width: 6px; height: 6px"></span>il y a 5 min</span>
+</div>
+<ul style="display: flex; flex-direction: column">
+<li style="display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line)"><span class="file-ic" style="width: 22px; height: 27px; font-size: 6px; padding-bottom: 3px">PDF</span><span class="small ellipsis" style="flex: 1">Alder_EtatsFinanciers_2025.pdf</span><span class="xs muted tnum">4,2 Mo</span></li>
+<li style="display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line)"><span class="file-ic" style="width: 22px; height: 27px; font-size: 6px; padding-bottom: 3px">XLS</span><span class="small ellipsis" style="flex: 1">Modele_valorisation_v7.xlsx</span><span class="xs muted tnum">1,1 Mo</span></li>
+<li style="display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line)"><span class="file-ic" style="width: 22px; height: 27px; font-size: 6px; padding-bottom: 3px">PDF</span><span class="small ellipsis" style="flex: 1">Alder_Rapport_annuel_2025.pdf</span><span class="xs muted tnum">8,9 Mo</span></li>
+<li style="display: flex; align-items: center; gap: 10px; padding: 8px 0"><span class="tile" style="width: 22px; height: 22px"><svg class="i i-xs" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5a2 2 0 0 1 2-2h3.6l2 2h7.4a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"></path></svg></span><span class="small ellipsis" style="flex: 1">Contrats_clients</span><span class="xs muted">12 fichiers</span></li>
+</ul>
+<button class="btn btn-ghost btn-sm" type="button" style="align-self: flex-start; margin-left: -8px"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>Ajouter des sources</button>
+</section>
+</div>
+</div>
+</div>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["Clair","Sombre"],"default":"Clair"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { themeClass: this.props.theme === 'Sombre' ? 'dark' : '' };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Lumia — Automatisations</title>
+<link rel="stylesheet" href="./lumia.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit}a:hover{color:inherit}
+</style>
+</head>
+<body>
+<div class="lm " style="min-height: 100vh; display: flex; flex-wrap: wrap; align-items: stretch">
+
+<aside class="side" style="flex: 0 0 256px; min-width: 0; display: flex; flex-direction: column; gap: 22px; padding: 12px 10px 14px 12px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 6px">
+<button class="ws" type="button" aria-label="Changer d’espace de travail">
+<svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg>
+<span style="font-size: 13.5px; font-weight: 600; letter-spacing: -.01em">Groupe Sérac</span>
+<svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--ink-3)"><path d="m8 10 4 4 4-4"></path></svg>
+</button>
+<button class="btn btn-icon btn-ghost" type="button" aria-label="Replier la barre latérale"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"></rect><path d="M9.5 4.5v15"></path></svg></button>
+</div>
+<nav class="nav" aria-label="Navigation principale">
+<a class="nav-item" href="Main.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg><span class="label">Nouvelle conversation</span><span class="kbd">⌘N</span></a>
+<a class="nav-item" href="Palette.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m20 20-4.2-4.2"></path></svg><span class="label">Rechercher</span><span class="kbd">⌘K</span></a>
+<a class="nav-item" href="Projet.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5a2 2 0 0 1 2-2h3.6l2 2h7.4a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"></path></svg><span class="label">Projets</span></a>
+<a class="nav-item" href="Bibliotheque.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 4 8.5 4.5L12 13 3.5 8.5z"></path><path d="m3.5 12.5 8.5 4.5 8.5-4.5"></path><path d="m3.5 16.5 8.5 4.5 8.5-4.5"></path></svg><span class="label">Bibliothèque</span></a>
+<a class="nav-item is-active" href="Automatisations.html" aria-current="page"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg><span class="label">Automatisations</span><span class="count">5</span></a>
+<a class="nav-item" href="Connecteurs.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3.5v4M15 3.5v4"></path><path d="M6.5 7.5h11v3a5.5 5.5 0 0 1-11 0z"></path><path d="M12 16v4.5"></path></svg><span class="label">Connecteurs</span></a>
+</nav>
+<div style="display: flex; flex-direction: column; gap: 1px">
+<div class="side-label">Épinglés</div>
+<a class="recent" href="Projet.html"><span class="tile">A</span><span class="label">Projet Alder</span></a>
+<a class="recent" href="Projet.html"><span class="tile">C</span><span class="label">Comité de direction</span></a>
+<a class="recent" href="Projet.html"><span class="tile">V</span><span class="label">Voix du client</span></a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 1px; min-height: 0">
+<div class="side-label">Récents</div>
+<a class="recent" href="Work.html"><span class="label">Dossier du comité d’investissement</span><svg class="mark mark-xs is-live" viewBox="0 0 24 24" aria-label="En cours"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg></a>
+<a class="recent" href="#"><span class="label">Revue des contrats fournisseurs</span><span class="dot dot-wait" aria-label="Validation attendue"></span></a>
+<a class="recent" href="Conversation.html"><span class="label">Synthèse des entretiens clients T3</span></a>
+<a class="recent" href="Livrable.html"><span class="label">Note au comité — Alder</span></a>
+<a class="recent" href="#"><span class="label">Benchmark tarifaire Europe du Nord</span></a>
+<a class="recent" href="#"><span class="label">Préparation du séminaire de rentrée</span></a>
+<a class="recent" href="#"><span class="label">Réponse à l’appel d’offres Ardent</span></a>
+<a class="recent" href="#"><span class="label">Plan stratégique 2027 — cadrage</span></a>
+</div>
+<div class="me" style="margin-top: auto">
+<span class="av av-ink">CA</span>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column">
+<span style="font-size: 13px; font-weight: 550">Camille Arnaud</span>
+<span class="ellipsis" style="font-size: 12px; color: var(--ink-3)">Direction de la stratégie</span>
+</div>
+<a class="btn btn-icon btn-ghost" href="Administration.html" aria-label="Réglages"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"></path><circle cx="16" cy="7" r="2"></circle><circle cx="10" cy="17" r="2"></circle></svg></a>
+</div>
+</aside>
+
+<main class="sheet" style="flex: 999 1 560px; margin: 8px 8px 8px 0; height: calc(100vh - 16px); min-height: 640px">
+<header class="bar">
+<div style="display: flex; align-items: center; gap: 10px">
+<h1 style="font-size: 15px; font-weight: 600; letter-spacing: -.012em">Automatisations</h1>
+<span class="count">4 actives</span>
+</div>
+<button class="btn btn-primary btn-sm" type="button"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>Nouvelle automatisation</button>
+</header>
+
+<div style="flex: 1; min-height: 0; display: flex; flex-wrap: wrap">
+
+<section style="flex: 999 1 520px; min-width: 0; height: 100%; overflow: auto; padding: 26px 28px 32px; display: flex; flex-direction: column; gap: 20px" aria-label="Liste des automatisations">
+<p class="lead" style="max-width: 560px">Lumia exécute ces tâches pour vous, selon un calendrier ou à la suite d’un événement, et vous livre le résultat là où vous travaillez.</p>
+<div style="overflow-x: auto">
+<table class="tbl" style="min-width: 640px">
+<thead>
+<tr><th style="width: 46px"><span class="sr-only">Activée</span></th><th>Automatisation</th><th>Déclencheur</th><th>Dernière exécution</th><th class="num">Prochaine</th></tr>
+</thead>
+<tbody>
+<tr class="is-selected">
+<td><button class="switch" type="button" role="switch" aria-checked="true" aria-label="Synthèse hebdomadaire des ventes activée"></button></td>
+<td><span style="display: flex; flex-direction: column; gap: 2px"><span class="strong" style="font-size: 13.5px">Synthèse hebdomadaire des ventes</span><span class="xs muted">Salesforce · Excel « Ventes 2026 »</span></span></td>
+<td>Chaque lundi · 07:30</td>
+<td><span style="display: flex; align-items: center; gap: 7px"><span class="dot dot-done"></span>Lundi, 08:02</span></td>
+<td class="num">12 oct.</td>
+</tr>
+<tr>
+<td><button class="switch" type="button" role="switch" aria-checked="true" aria-label="Veille concurrentielle activée"></button></td>
+<td><span style="display: flex; flex-direction: column; gap: 2px"><span class="strong" style="font-size: 13.5px">Veille concurrentielle</span><span class="xs muted">Presse spécialisée · sites des concurrents</span></span></td>
+<td>Jours ouvrés · 08:00</td>
+<td><span style="display: flex; align-items: center; gap: 7px"><span class="dot dot-done"></span>Aujourd’hui, 08:04</span></td>
+<td class="num">Demain</td>
+</tr>
+<tr>
+<td><button class="switch" type="button" role="switch" aria-checked="true" aria-label="Préparation des rendez-vous clients activée"></button></td>
+<td><span style="display: flex; flex-direction: column; gap: 2px"><span class="strong" style="font-size: 13.5px">Préparation des rendez-vous clients</span><span class="xs muted">Outlook · Salesforce</span></span></td>
+<td>1 h avant chaque rendez-vous externe</td>
+<td><span style="display: flex; align-items: center; gap: 7px"><span class="dot dot-done"></span>Aujourd’hui, 09:00</span></td>
+<td class="num">14:00</td>
+</tr>
+<tr>
+<td><button class="switch" type="button" role="switch" aria-checked="true" aria-label="Relance des factures échues activée"></button></td>
+<td><span style="display: flex; flex-direction: column; gap: 2px"><span class="strong" style="font-size: 13.5px">Relance des factures échues</span><span class="xs muted">SAP · Outlook, brouillons uniquement</span></span></td>
+<td>Chaque vendredi · 16:00</td>
+<td><span class="tag tag-lumen"><span class="dot dot-wait"></span>7 brouillons à valider</span></td>
+<td class="num">9 oct.</td>
+</tr>
+<tr>
+<td><button class="switch" type="button" role="switch" aria-checked="false" aria-label="Rapport mensuel au comité de direction désactivé"></button></td>
+<td><span style="display: flex; flex-direction: column; gap: 2px"><span class="strong" style="font-size: 13.5px; color: var(--ink-3)">Rapport mensuel au comité de direction</span><span class="xs muted">Sources du projet Comité de direction</span></span></td>
+<td style="color: var(--ink-3)">Le 1er de chaque mois</td>
+<td style="color: var(--ink-3)">En pause</td>
+<td class="num" style="color: var(--ink-3)">—</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="well" style="display: flex; align-items: center; gap: 14px; padding: 14px 16px">
+<span class="tile tile-md" style="--mark-bg: var(--sunken)"><svg class="mark mark-sm" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg></span>
+<p class="small soft" style="flex: 1">Décrivez simplement ce qui doit se produire, et quand. Lumia propose le déclencheur, les sources et le mode de livraison.</p>
+<button class="btn btn-line btn-sm" type="button">Décrire une automatisation</button>
+</div>
+</section>
+
+<aside style="flex: 1 1 380px; max-width: 420px; min-width: 0; height: 100%; overflow-y: auto; border-left: 1px solid var(--line); display: flex; flex-direction: column" aria-label="Détail de l’automatisation">
+<div style="padding: 22px 24px 18px; display: flex; flex-direction: column; gap: 8px; border-bottom: 1px solid var(--line)">
+<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+<h2 class="h2" style="font-size: 18px">Synthèse hebdomadaire des ventes</h2>
+<button class="btn btn-icon btn-ghost btn-sm" type="button" aria-label="Plus d’options" style="margin: -3px -6px 0 0"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h.01M12 12h.01M18 12h.01" stroke-width="2.6"></path></svg></button>
+</div>
+<p class="xs muted">Créée par Camille Arnaud · 18 exécutions depuis juin</p>
+</div>
+
+<div style="padding: 18px 24px; display: flex; flex-direction: column; gap: 10px; border-bottom: 1px solid var(--line)">
+<p class="eyebrow">Consigne</p>
+<p class="small soft" style="line-height: 1.6">Chaque lundi, rassemble les ventes de la semaine écoulée par région et par gamme. Compare-les à l’objectif et à la même semaine de l’an dernier, signale les trois écarts les plus significatifs et propose une explication pour chacun. Une page au maximum.</p>
+</div>
+
+<dl style="padding: 6px 24px; display: flex; flex-direction: column; border-bottom: 1px solid var(--line)">
+<div style="display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line)">
+<dt class="small muted">Déclencheur</dt>
+<dd class="small" style="display: flex; flex-direction: column; gap: 2px"><span class="strong">Chaque lundi à 07:30</span><span class="xs muted">Heure de Paris</span></dd>
+</div>
+<div style="display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line)">
+<dt class="small muted">Sources</dt>
+<dd style="display: flex; flex-direction: column; gap: 8px">
+<span class="small" style="display: flex; align-items: center; gap: 8px"><span class="tile">Sf</span>Salesforce<span class="xs muted">· lecture</span></span>
+<span class="small" style="display: flex; align-items: center; gap: 8px"><span class="tile">Ex</span>Excel « Ventes 2026 »<span class="xs muted">· lecture</span></span>
+</dd>
+</div>
+<div style="display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line)">
+<dt class="small muted">Livraison</dt>
+<dd style="display: flex; flex-direction: column; gap: 8px">
+<span class="small" style="display: flex; align-items: center; gap: 8px"><span class="tile">Ou</span>E-mail à Camille Arnaud</span>
+<span class="small" style="display: flex; align-items: center; gap: 8px"><span class="tile">Te</span>Teams · Direction commerciale</span>
+</dd>
+</div>
+<div style="display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; padding: 12px 0">
+<dt class="small muted">Validation</dt>
+<dd class="small" style="display: flex; flex-direction: column; gap: 2px"><span class="strong">Non requise</span><span class="xs muted">Lecture seule, diffusion interne</span></dd>
+</div>
+</dl>
+
+<div style="padding: 18px 24px; display: flex; flex-direction: column; gap: 8px">
+<p class="eyebrow" style="margin-bottom: 4px">Historique</p>
+<a href="Bibliotheque.html" style="display: grid; grid-template-columns: 12px minmax(0, 1fr) auto; align-items: center; gap: 10px; height: 30px"><span class="dot dot-done"></span><span class="small">Lundi 5 octobre, 08:02</span><span class="xs muted tnum">3 min 12 s</span></a>
+<a href="#" style="display: grid; grid-template-columns: 12px minmax(0, 1fr) auto; align-items: center; gap: 10px; height: 30px"><span class="dot dot-done"></span><span class="small">Lundi 28 septembre, 07:58</span><span class="xs muted tnum">2 min 47 s</span></a>
+<a href="#" style="display: grid; grid-template-columns: 12px minmax(0, 1fr) auto; align-items: center; gap: 10px; height: 30px"><span class="dot" style="background: var(--lumen)"></span><span class="small">Lundi 21 septembre, 08:05 <span class="xs" style="color: var(--lumen-ink)">· source partielle</span></span><span class="xs muted tnum">4 min 03 s</span></a>
+<a href="#" style="display: grid; grid-template-columns: 12px minmax(0, 1fr) auto; align-items: center; gap: 10px; height: 30px"><span class="dot dot-done"></span><span class="small">Lundi 14 septembre, 07:41</span><span class="xs muted tnum">2 min 58 s</span></a>
+</div>
+
+<div style="margin-top: auto; padding: 14px 24px 18px; display: flex; gap: 8px; border-top: 1px solid var(--line)">
+<button class="btn btn-line btn-sm" type="button"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"></path></svg>Exécuter maintenant</button>
+<button class="btn btn-ghost btn-sm" type="button">Modifier</button>
+</div>
+</aside>
+
+</div>
+</main>
+</div>
+</body>
+</html>

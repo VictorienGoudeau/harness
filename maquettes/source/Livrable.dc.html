@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Lumia — Livrable, relecture</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./lumia.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit}a:hover{color:inherit}
+</style>
+</helmet>
+<div class="lm {{themeClass}}" style="min-height: 100vh; display: flex; flex-wrap: wrap; align-items: stretch">
+
+<aside class="side" style="flex: 0 0 256px; min-width: 0; display: flex; flex-direction: column; gap: 22px; padding: 12px 10px 14px 12px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 6px">
+<button class="ws" type="button" aria-label="Changer d’espace de travail">
+<svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg>
+<span style="font-size: 13.5px; font-weight: 600; letter-spacing: -.01em">Groupe Sérac</span>
+<svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--ink-3)"><path d="m8 10 4 4 4-4"></path></svg>
+</button>
+<button class="btn btn-icon btn-ghost" type="button" aria-label="Replier la barre latérale"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"></rect><path d="M9.5 4.5v15"></path></svg></button>
+</div>
+<nav class="nav" aria-label="Navigation principale">
+<a class="nav-item" href="Main.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg><span class="label">Nouvelle conversation</span><span class="kbd">⌘N</span></a>
+<a class="nav-item" href="Palette.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m20 20-4.2-4.2"></path></svg><span class="label">Rechercher</span><span class="kbd">⌘K</span></a>
+<a class="nav-item" href="Projet.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5a2 2 0 0 1 2-2h3.6l2 2h7.4a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"></path></svg><span class="label">Projets</span></a>
+<a class="nav-item is-active" href="Bibliotheque.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 4 8.5 4.5L12 13 3.5 8.5z"></path><path d="m3.5 12.5 8.5 4.5 8.5-4.5"></path><path d="m3.5 16.5 8.5 4.5 8.5-4.5"></path></svg><span class="label">Bibliothèque</span></a>
+<a class="nav-item" href="Automatisations.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg><span class="label">Automatisations</span><span class="count">5</span></a>
+<a class="nav-item" href="Connecteurs.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3.5v4M15 3.5v4"></path><path d="M6.5 7.5h11v3a5.5 5.5 0 0 1-11 0z"></path><path d="M12 16v4.5"></path></svg><span class="label">Connecteurs</span></a>
+</nav>
+<div style="display: flex; flex-direction: column; gap: 1px">
+<div class="side-label">Épinglés</div>
+<a class="recent" href="Projet.dc.html"><span class="tile">A</span><span class="label">Projet Alder</span></a>
+<a class="recent" href="Projet.dc.html"><span class="tile">C</span><span class="label">Comité de direction</span></a>
+<a class="recent" href="Projet.dc.html"><span class="tile">V</span><span class="label">Voix du client</span></a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 1px; min-height: 0">
+<div class="side-label">Récents</div>
+<a class="recent" href="Work.dc.html"><span class="label">Dossier du comité d’investissement</span><svg class="mark mark-xs is-live" viewBox="0 0 24 24" aria-label="En cours"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg></a>
+<a class="recent" href="#"><span class="label">Revue des contrats fournisseurs</span><span class="dot dot-wait" aria-label="Validation attendue"></span></a>
+<a class="recent" href="Conversation.dc.html"><span class="label">Synthèse des entretiens clients T3</span></a>
+<a class="recent is-active" href="Livrable.dc.html" aria-current="page"><span class="label">Note au comité — Alder</span></a>
+<a class="recent" href="#"><span class="label">Benchmark tarifaire Europe du Nord</span></a>
+<a class="recent" href="#"><span class="label">Préparation du séminaire de rentrée</span></a>
+<a class="recent" href="#"><span class="label">Réponse à l’appel d’offres Ardent</span></a>
+<a class="recent" href="#"><span class="label">Plan stratégique 2027 — cadrage</span></a>
+</div>
+<div class="me" style="margin-top: auto">
+<span class="av av-ink">CA</span>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column">
+<span style="font-size: 13px; font-weight: 550">Camille Arnaud</span>
+<span class="ellipsis" style="font-size: 12px; color: var(--ink-3)">Direction de la stratégie</span>
+</div>
+<a class="btn btn-icon btn-ghost" href="Administration.dc.html" aria-label="Réglages"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"></path><circle cx="16" cy="7" r="2"></circle><circle cx="10" cy="17" r="2"></circle></svg></a>
+</div>
+</aside>
+
+<main class="sheet" style="flex: 999 1 560px; margin: 8px 8px 8px 0; height: calc(100vh - 16px); min-height: 640px">
+<header class="bar">
+<div style="display: flex; align-items: center; gap: 12px; min-width: 0">
+<div class="crumb">
+<a href="Projet.dc.html">Projet Alder</a><span class="sep">/</span><a href="Bibliotheque.dc.html">Livrables</a><span class="sep">/</span><strong class="ellipsis">Note au comité d’investissement</strong>
+</div>
+<span class="tag">v3</span>
+<span class="xs muted" style="display: flex; align-items: center; gap: 5px"><svg class="i i-xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>Enregistré</span>
+</div>
+<div style="display: flex; align-items: center; gap: 6px">
+<div class="stack" style="margin-right: 6px" aria-label="Trois personnes et Lumia sur ce document">
+<span class="av av-sm av-ink">CA</span><span class="av av-sm">JM</span><span class="av av-sm">HV</span>
+</div>
+<button class="btn btn-ghost btn-sm" type="button"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H10l-4 3.5v-3.5a1.5 1.5 0 0 1-1.5-1.5z"></path></svg>Commenter</button>
+<button class="btn btn-line btn-sm" type="button">Exporter<svg class="i i-xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"></path></svg></button>
+<button class="btn btn-primary btn-sm" type="button">Partager</button>
+</div>
+</header>
+
+<div style="flex: 1; min-height: 0; display: flex; flex-wrap: wrap">
+
+<nav style="flex: 0 0 216px; min-width: 0; height: 100%; overflow-y: auto; padding: 22px 14px 22px 18px; display: flex; flex-direction: column; gap: 28px; border-right: 1px solid var(--line)" aria-label="Sommaire du document">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<p class="eyebrow" style="padding: 0 8px 8px">Sommaire</p>
+<a class="recent" href="#"><span class="tnum muted" style="width: 12px">1</span><span class="label">Contexte et thèse</span></a>
+<a class="recent" href="#"><span class="tnum muted" style="width: 12px">2</span><span class="label">Performance financière</span></a>
+<a class="recent is-active" href="#"><span class="tnum muted" style="width: 12px">3</span><span class="label">Risques et vigilance</span></a>
+<a class="recent" href="#"><span class="tnum muted" style="width: 12px">4</span><span class="label">Valorisation</span></a>
+<a class="recent" href="#"><span class="tnum muted" style="width: 12px">5</span><span class="label">Recommandation</span></a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<p class="eyebrow" style="padding: 0 8px 8px">Versions</p>
+<a href="#" style="display: grid; grid-template-columns: 12px minmax(0, 1fr); column-gap: 10px; padding: 6px 8px; border-radius: 8px">
+<span class="dot" style="background: var(--ink); margin-top: 6px"></span>
+<span style="display: flex; flex-direction: column; gap: 1px"><span class="small strong">v3 · Comptes audités intégrés</span><span class="xs muted">Lumia · aujourd’hui 10:42</span></span>
+</a>
+<a href="#" style="display: grid; grid-template-columns: 12px minmax(0, 1fr); column-gap: 10px; padding: 6px 8px; border-radius: 8px">
+<span class="dot dot-off" style="margin-top: 6px"></span>
+<span style="display: flex; flex-direction: column; gap: 1px"><span class="small soft">v2 · Section risques</span><span class="xs muted">Lumia · 09:58</span></span>
+</a>
+<a href="#" style="display: grid; grid-template-columns: 12px minmax(0, 1fr); column-gap: 10px; padding: 6px 8px; border-radius: 8px">
+<span class="dot dot-off" style="margin-top: 6px"></span>
+<span style="display: flex; flex-direction: column; gap: 1px"><span class="small soft">v1 · Premier jet</span><span class="xs muted">Lumia · 09:31</span></span>
+</a>
+</div>
+</nav>
+
+<section class="desk" style="flex: 999 1 420px; min-width: 0; height: 100%; overflow-y: auto; padding: 28px 32px 40px" aria-label="Document">
+<article class="paper doc" style="max-width: 620px; margin: 0 auto; padding: 40px 60px 56px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px">
+<span class="meta">Projet Alder · note au comité</span>
+<span class="meta">Page 2 sur 4</span>
+</div>
+
+<h2 style="margin-top: 30px"><span class="n">3.</span>Risques et points de vigilance</h2>
+<p>Trois points appellent une attention particulière. Le premier tient à la concentration du portefeuille : les cinq premiers clients représentent 41 % du chiffre d’affaires, dont un seul pèse 14 % <a class="cite" href="#">4</a>. Le deuxième concerne la dépendance à un fournisseur unique de moteurs basse consommation, sans alternative qualifiée à ce jour <a class="cite" href="#">7</a>.</p>
+
+<div style="position: relative; margin-top: 74px">
+<div style="position: absolute; left: -14px; top: -62px; z-index: 2; display: flex; align-items: center; gap: 4px; padding: 5px; background: var(--raised); border-radius: 12px; box-shadow: var(--e3); font-family: var(--sans); white-space: nowrap">
+<div style="display: flex; align-items: center; gap: 8px; height: 32px; padding: 0 12px 0 8px; border-radius: 8px; background: var(--sunken); box-shadow: inset 0 0 0 1px var(--line); width: 188px; --mark-bg: var(--sunken)">
+<svg class="mark mark-sm" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg>
+<label class="sr-only" for="demande-inline">Demander à Lumia</label>
+<input id="demande-inline" class="bare" style="font-size: 13px; height: 30px" placeholder="Demander à Lumia…">
+</div>
+<button class="btn btn-ghost btn-sm" type="button">Reformuler</button>
+<button class="btn btn-ghost btn-sm" type="button">Raccourcir</button>
+<button class="btn btn-ghost btn-sm" type="button">Sourcer</button>
+<span class="vsep"></span>
+<button class="btn btn-icon btn-ghost btn-sm" type="button" aria-label="Commenter la sélection"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H10l-4 3.5v-3.5a1.5 1.5 0 0 1-1.5-1.5z"></path></svg></button>
+</div>
+<p><span class="sel">Le troisième porte sur la croissance attendue du marché de la rénovation, dont le rythme dépendra du maintien des aides publiques au-delà de 2027.</span> Une révision de ces dispositifs pèserait d’abord sur les volumes du segment résidentiel.</p>
+</div>
+
+<h2><span class="n">4.</span>Valorisation</h2>
+<p>Sur la base des transactions comparables, la valorisation ressort entre <del>9 et 10 fois</del> <ins>9,2 et 9,8 fois</ins> l’EBITDA 2025, soit une valeur d’entreprise de 165 à 175 M€ <a class="cite" href="#">11</a>. L’approche par les flux actualisés conforte le haut de cette fourchette.</p>
+
+<h2><span class="n">5.</span>Recommandation</h2>
+<p>Nous recommandons au comité d’autoriser la remise d’une offre ferme, assortie de deux conditions : la sécurisation d’un second fournisseur de moteurs et une garantie de passif couvrant les contrats clients majeurs.</p>
+</article>
+</section>
+
+<aside style="flex: 0 0 300px; min-width: 0; height: 100%; overflow-y: auto; border-left: 1px solid var(--line); display: flex; flex-direction: column" aria-label="Commentaires">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 16px 18px 12px">
+<p class="eyebrow">Commentaires · 3</p>
+<div class="seg" role="group" aria-label="Filtrer">
+<button class="on" type="button" aria-pressed="true">Ouverts</button>
+<button type="button" aria-pressed="false">Tous</button>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 0 14px 18px">
+
+<div class="card" style="box-shadow: var(--e2); padding: 14px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; align-items: center; gap: 8px"><span class="av av-sm">JM</span><span class="small strong">Jean Morel</span><span class="xs muted">10:51</span></div>
+<p class="small soft">Peut-on préciser l’hypothèse de croissance retenue pour 2026 ?</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 12px; border-radius: 10px; background: var(--sunken); box-shadow: inset 0 0 0 1px var(--line); --mark-bg: var(--sunken)">
+<div style="display: flex; align-items: center; gap: 8px"><svg class="mark mark-sm" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg><span class="small strong">Lumia</span><span class="xs muted">suggestion</span></div>
+<p class="small soft">Le plan d’affaires retient 4 à 6 % par an <a class="cite" href="#">12</a>. Je propose d’ajouter cette fourchette en fin de paragraphe.</p>
+<div style="display: flex; gap: 6px">
+<button class="btn btn-primary btn-sm" type="button">Appliquer</button>
+<button class="btn btn-ghost btn-sm" type="button">Ignorer</button>
+</div>
+</div>
+</div>
+
+<div class="card" style="padding: 14px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: center; gap: 8px"><svg class="mark mark-sm" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg><span class="small strong">Lumia</span><span class="xs muted">modification suggérée</span></div>
+<p class="small soft">Resserrer le multiple sur la base des sept transactions comparables retenues : 9,2 à 9,8 fois.</p>
+<div style="display: flex; gap: 6px">
+<button class="btn btn-line btn-sm" type="button">Accepter</button>
+<button class="btn btn-ghost btn-sm" type="button">Refuser</button>
+</div>
+</div>
+
+<div style="display: flex; align-items: center; gap: 8px; padding: 10px 4px; border-top: 1px solid var(--line)">
+<span class="av av-xs">HV</span>
+<span class="xs muted ellipsis" style="flex: 1">Hélène Varga · Sourcer les parts de marché</span>
+<span class="tag tag-moss">Résolu</span>
+</div>
+</div>
+
+<div style="margin-top: auto; padding: 12px 14px 14px; border-top: 1px solid var(--line)">
+<div class="composer" style="border-radius: 12px; flex-direction: row; align-items: center; gap: 4px; padding: 4px 4px 4px 12px; box-shadow: 0 0 0 1px var(--line-strong)">
+<label class="sr-only" for="commentaire">Ajouter un commentaire</label>
+<input id="commentaire" class="bare" style="font-size: 13px" placeholder="Commenter ou mentionner @Lumia…">
+<button class="send is-idle" type="button" aria-label="Publier" style="width: 28px; height: 28px"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"></path></svg></button>
+</div>
+</div>
+</aside>
+
+</div>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["Clair","Sombre"],"default":"Clair"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { themeClass: this.props.theme === 'Sombre' ? 'dark' : '' };
+  }
+}
+</script>
+</body>
+</html>

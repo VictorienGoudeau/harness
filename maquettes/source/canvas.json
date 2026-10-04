@@ -1,0 +1,52 @@
+{
+  "v": 3,
+  "createdOnFiles": { "v": 1, "at": "2026-10-04T19:12:42Z" },
+  "title": "Lumia — Maquettes",
+  "launch": { "view": "canvas" },
+  "pages": [],
+  "boards": {
+    "Fondations.dc.html": { "x": 0, "y": 0, "w": 1440, "h": 1180, "title": "Fondations" },
+    "Connexion.dc.html": { "x": 0, "y": 1580, "w": 1440, "h": 900, "title": "Connexion", "expand": "fill", "is_interactive": true },
+    "Main.dc.html": { "x": 1520, "y": 1580, "w": 1440, "h": 900, "title": "Accueil", "expand": "fill", "is_interactive": true },
+    "Conversation.dc.html": { "x": 3040, "y": 1580, "w": 1440, "h": 900, "title": "Conversation · Chat", "expand": "fill", "is_interactive": true },
+    "Work.dc.html": { "x": 0, "y": 2880, "w": 1440, "h": 900, "title": "Work · tâche en cours", "expand": "fill", "is_interactive": true },
+    "Livrable.dc.html": { "x": 1520, "y": 2880, "w": 1440, "h": 900, "title": "Livrable · relecture", "expand": "fill", "is_interactive": true },
+    "WorkNuit.dc.html": { "x": 3040, "y": 2880, "w": 1440, "h": 900, "title": "Work · validation d’envoi (nuit)", "expand": "fill", "is_interactive": true },
+    "Projet.dc.html": { "x": 0, "y": 4180, "w": 1440, "h": 900, "title": "Projet", "expand": "fill", "is_interactive": true },
+    "Bibliotheque.dc.html": { "x": 1520, "y": 4180, "w": 1440, "h": 900, "title": "Bibliothèque", "expand": "fill", "is_interactive": true },
+    "Automatisations.dc.html": { "x": 3040, "y": 4180, "w": 1440, "h": 900, "title": "Automatisations", "expand": "fill", "is_interactive": true },
+    "Connecteurs.dc.html": { "x": 0, "y": 5480, "w": 1440, "h": 900, "title": "Connecteurs", "expand": "fill", "is_interactive": true },
+    "Administration.dc.html": { "x": 1520, "y": 5480, "w": 1440, "h": 900, "title": "Administration", "expand": "fill", "is_interactive": true },
+    "Palette.dc.html": { "x": 3040, "y": 5480, "w": 1440, "h": 900, "title": "Recherche ⌘K", "expand": "fill", "is_interactive": true },
+    "MobileAccueil.dc.html": { "x": 0, "y": 6780, "w": 390, "h": 844, "title": "Mobile · Accueil", "is_interactive": true },
+    "MobileValidation.dc.html": { "x": 510, "y": 6780, "w": 390, "h": 844, "title": "Mobile · Validation", "is_interactive": true },
+    "MobileConversation.dc.html": { "x": 1020, "y": 6780, "w": 390, "h": 844, "title": "Mobile · Conversation", "is_interactive": true }
+  },
+  "order": [
+    "Fondations.dc.html",
+    "Connexion.dc.html",
+    "Main.dc.html",
+    "Conversation.dc.html",
+    "Work.dc.html",
+    "Livrable.dc.html",
+    "WorkNuit.dc.html",
+    "Projet.dc.html",
+    "Bibliotheque.dc.html",
+    "Automatisations.dc.html",
+    "Connecteurs.dc.html",
+    "Administration.dc.html",
+    "Palette.dc.html",
+    "MobileAccueil.dc.html",
+    "MobileValidation.dc.html",
+    "MobileConversation.dc.html"
+  ],
+  "notes": {
+    "titreFondations": { "x": 0, "y": -300, "text": "Fondations", "kind": "title1", "maxW": 4480 },
+    "titreChat": { "x": 0, "y": 1280, "text": "Chat", "kind": "title1", "maxW": 4480 },
+    "titreWork": { "x": 0, "y": 2580, "text": "Work", "kind": "title1", "maxW": 4480 },
+    "titreEspace": { "x": 0, "y": 3880, "text": "Espace de travail", "kind": "title1", "maxW": 4480 },
+    "titreEntreprise": { "x": 0, "y": 5180, "text": "Entreprise", "kind": "title1", "maxW": 4480 },
+    "titreMobile": { "x": 0, "y": 6480, "text": "Mobile", "kind": "title1", "maxW": 1410 }
+  },
+  "designSystems": []
+}

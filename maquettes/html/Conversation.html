@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Lumia — Conversation</title>
+<link rel="stylesheet" href="./lumia.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit}a:hover{color:inherit}
+</style>
+</head>
+<body>
+<div class="lm " style="min-height: 100vh; display: flex; flex-wrap: wrap; align-items: stretch">
+
+<aside class="side" style="flex: 0 0 256px; min-width: 0; display: flex; flex-direction: column; gap: 22px; padding: 12px 10px 14px 12px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 6px">
+<button class="ws" type="button" aria-label="Changer d’espace de travail">
+<svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg>
+<span style="font-size: 13.5px; font-weight: 600; letter-spacing: -.01em">Groupe Sérac</span>
+<svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--ink-3)"><path d="m8 10 4 4 4-4"></path></svg>
+</button>
+<button class="btn btn-icon btn-ghost" type="button" aria-label="Replier la barre latérale"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"></rect><path d="M9.5 4.5v15"></path></svg></button>
+</div>
+<nav class="nav" aria-label="Navigation principale">
+<a class="nav-item" href="Main.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg><span class="label">Nouvelle conversation</span><span class="kbd">⌘N</span></a>
+<a class="nav-item" href="Palette.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m20 20-4.2-4.2"></path></svg><span class="label">Rechercher</span><span class="kbd">⌘K</span></a>
+<a class="nav-item" href="Projet.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5a2 2 0 0 1 2-2h3.6l2 2h7.4a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"></path></svg><span class="label">Projets</span></a>
+<a class="nav-item" href="Bibliotheque.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 4 8.5 4.5L12 13 3.5 8.5z"></path><path d="m3.5 12.5 8.5 4.5 8.5-4.5"></path><path d="m3.5 16.5 8.5 4.5 8.5-4.5"></path></svg><span class="label">Bibliothèque</span></a>
+<a class="nav-item" href="Automatisations.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg><span class="label">Automatisations</span><span class="count">5</span></a>
+<a class="nav-item" href="Connecteurs.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3.5v4M15 3.5v4"></path><path d="M6.5 7.5h11v3a5.5 5.5 0 0 1-11 0z"></path><path d="M12 16v4.5"></path></svg><span class="label">Connecteurs</span></a>
+</nav>
+<div style="display: flex; flex-direction: column; gap: 1px">
+<div class="side-label">Épinglés</div>
+<a class="recent" href="Projet.html"><span class="tile">A</span><span class="label">Projet Alder</span></a>
+<a class="recent" href="Projet.html"><span class="tile">C</span><span class="label">Comité de direction</span></a>
+<a class="recent" href="Projet.html"><span class="tile">V</span><span class="label">Voix du client</span></a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 1px; min-height: 0">
+<div class="side-label">Récents</div>
+<a class="recent" href="Work.html"><span class="label">Dossier du comité d’investissement</span><svg class="mark mark-xs is-live" viewBox="0 0 24 24" aria-label="En cours"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg></a>
+<a class="recent" href="#"><span class="label">Revue des contrats fournisseurs</span><span class="dot dot-wait" aria-label="Validation attendue"></span></a>
+<a class="recent is-active" href="Conversation.html" aria-current="page"><span class="label">Synthèse des entretiens clients T3</span></a>
+<a class="recent" href="Livrable.html"><span class="label">Note au comité — Alder</span></a>
+<a class="recent" href="#"><span class="label">Benchmark tarifaire Europe du Nord</span></a>
+<a class="recent" href="#"><span class="label">Préparation du séminaire de rentrée</span></a>
+<a class="recent" href="#"><span class="label">Réponse à l’appel d’offres Ardent</span></a>
+<a class="recent" href="#"><span class="label">Plan stratégique 2027 — cadrage</span></a>
+</div>
+<div class="me" style="margin-top: auto">
+<span class="av av-ink">CA</span>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column">
+<span style="font-size: 13px; font-weight: 550">Camille Arnaud</span>
+<span class="ellipsis" style="font-size: 12px; color: var(--ink-3)">Direction de la stratégie</span>
+</div>
+<a class="btn btn-icon btn-ghost" href="Administration.html" aria-label="Réglages"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"></path><circle cx="16" cy="7" r="2"></circle><circle cx="10" cy="17" r="2"></circle></svg></a>
+</div>
+</aside>
+
+<main class="sheet" style="flex: 999 1 560px; margin: 8px 8px 8px 0; height: calc(100vh - 16px); min-height: 640px">
+<header class="bar">
+<div style="display: flex; align-items: center; gap: 12px; min-width: 0">
+<div class="crumb">
+<a href="Projet.html">Voix du client</a><span class="sep">/</span><strong class="ellipsis">Synthèse des entretiens clients — T3</strong>
+</div>
+<span class="tag">Chat</span>
+</div>
+<div style="display: flex; align-items: center; gap: 4px">
+<div class="stack" style="margin-right: 8px" aria-label="Partagée avec Thomas Leclerc"><span class="av av-sm av-ink">CA</span><span class="av av-sm">TL</span></div>
+<button class="btn btn-line btn-sm" type="button"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V4M8 8l4-4 4 4"></path><path d="M5 12.5V18a1.5 1.5 0 0 0 1.5 1.5h11A1.5 1.5 0 0 0 19 18v-5.5"></path></svg>Partager</button>
+<button class="btn btn-icon btn-ghost btn-sm" type="button" aria-label="Plus d’options"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h.01M12 12h.01M18 12h.01" stroke-width="2.6"></path></svg></button>
+</div>
+</header>
+
+<div class="fade-top" style="flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column-reverse">
+<div style="width: 100%; max-width: 768px; margin: 0 auto; padding: 28px 36px 20px; display: flex; flex-direction: column; gap: 30px">
+
+<div style="display: flex; flex-direction: column; align-items: flex-end; gap: 8px">
+<div class="file">
+<span class="file-ic">ZIP</span>
+<span style="min-width: 0"><span class="file-name">Entretiens_clients_T3</span><span class="file-meta">14 comptes rendus · 2,1 Mo</span></span>
+</div>
+<div class="bubble">Voici les 14 comptes rendus d’entretiens du trimestre. Fais ressortir les cinq thèmes dominants, avec un verbatim représentatif et l’évolution par rapport au T2.</div>
+</div>
+
+<article style="display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; align-items: center; gap: 10px">
+<svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg>
+<span style="font-size: 13.5px; font-weight: 600">Lumia</span>
+<button class="btn btn-ghost btn-sm" type="button" style="color: var(--ink-3); margin-left: -2px">14 documents et la synthèse du T2 consultés · 41 s<svg class="i i-xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"></path></svg></button>
+</div>
+
+<div class="prose">
+<p>Les entretiens convergent nettement : la qualité des produits n’est pas remise en cause. Ce sont les <strong>délais</strong> et la <strong>lisibilité de l’offre</strong> qui fragilisent la relation, surtout chez les distributeurs <a class="cite" href="#">1</a><a class="cite" href="#">4</a>.</p>
+</div>
+
+<figure style="display: flex; flex-direction: column; gap: 10px">
+<figcaption style="display: flex; justify-content: space-between; align-items: baseline">
+<span class="eyebrow">Thèmes cités</span>
+<span class="xs muted">entretiens sur 14 · écart avec le T2</span>
+</figcaption>
+<ol>
+<li class="rank"><span class="rank-n">01</span><span class="rank-t">Délais de livraison</span><span class="rank-bar"><span style="width: 78.6%"></span></span><span class="rank-v">11</span><span class="rank-d">+4</span></li>
+<li class="rank"><span class="rank-n">02</span><span class="rank-t">Lisibilité de la tarification</span><span class="rank-bar"><span style="width: 64.3%"></span></span><span class="rank-v">9</span><span class="rank-d">+3</span></li>
+<li class="rank"><span class="rank-n">03</span><span class="rank-t">Qualité de l’accompagnement</span><span class="rank-bar"><span style="width: 57.1%"></span></span><span class="rank-v">8</span><span class="rank-d">stable</span></li>
+<li class="rank"><span class="rank-n">04</span><span class="rank-t">Intégration aux outils existants</span><span class="rank-bar"><span style="width: 42.9%"></span></span><span class="rank-v">6</span><span class="rank-d">−2</span></li>
+<li class="rank"><span class="rank-n">05</span><span class="rank-t">Durabilité des matériaux</span><span class="rank-bar"><span style="width: 28.6%"></span></span><span class="rank-v">4</span><span class="rank-d">nouveau</span></li>
+</ol>
+</figure>
+
+<blockquote style="display: flex; flex-direction: column; gap: 10px; padding: 6px 0 2px 28px">
+<p class="verbatim">« On ne remet pas en cause vos produits. Mais quand on nous annonce six semaines et qu’il en faut neuf, c’est notre crédibilité auprès de nos propres clients qui est en jeu. »</p>
+<footer class="small muted" style="display: flex; align-items: center; gap: 6px">— Directeur des achats, distribution B2B · entretien du 12 septembre <a class="cite" href="#">3</a></footer>
+</blockquote>
+
+<div class="prose"><p>Je peux en tirer une note pour le comité de direction, avec l’ensemble des verbatims classés par thème.</p></div>
+
+<div style="display: flex; align-items: center; gap: 2px; margin-left: -8px; flex-wrap: wrap">
+<button class="btn btn-icon btn-ghost btn-sm" type="button" aria-label="Copier"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11" height="11" rx="2"></rect><path d="M15.5 8.5V6a1.5 1.5 0 0 0-1.5-1.5H6A1.5 1.5 0 0 0 4.5 6v8A1.5 1.5 0 0 0 6 15.5h2.5"></path></svg></button>
+<button class="btn btn-icon btn-ghost btn-sm" type="button" aria-label="Régénérer"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3"></path><path d="M19.5 4.5v4h-4"></path></svg></button>
+<span class="vsep" style="margin: 0 6px"></span>
+<button class="btn btn-ghost btn-sm" type="button"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l4.5 4.5v11.5a1 1 0 0 1-1 1H7a1.5 1.5 0 0 1-1.5-1.5v-14A1.5 1.5 0 0 1 7 3.5z"></path><path d="M14 3.5V8h4.5"></path></svg>En faire une note</button>
+<a class="btn btn-ghost btn-sm" href="Work.html"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>Poursuivre en Work</a>
+<span style="flex: 1"></span>
+<button class="btn btn-ghost btn-sm" type="button"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.5c-1.8-1.3-4.3-2-7.5-2v13c3.2 0 5.7.7 7.5 2 1.8-1.3 4.3-2 7.5-2v-13c-3.2 0-5.7.7-7.5 2z"></path><path d="M12 6.5v13"></path></svg>15 sources</button>
+</div>
+</article>
+
+</div>
+</div>
+
+<div style="flex: none; padding: 0 36px 14px; display: flex; flex-direction: column; align-items: center; gap: 10px">
+<div class="composer" style="width: 100%; max-width: 696px">
+<label class="sr-only" for="reponse">Votre message</label>
+<textarea id="reponse" rows="1" placeholder="Répondre à Lumia…" style="min-height: 54px; padding-top: 16px"></textarea>
+<div class="composer-bar" style="padding-top: 4px">
+<div style="display: flex; align-items: center; gap: 6px">
+<div class="seg" role="group" aria-label="Mode">
+<button class="on" type="button" aria-pressed="true">Chat</button>
+<button type="button" aria-pressed="false">Work</button>
+</div>
+<span class="vsep" style="margin: 0 4px"></span>
+<button class="btn btn-icon btn-ghost btn-sm" type="button" aria-label="Joindre un fichier"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5 12.4 19a5 5 0 0 1-7.1-7.1l7.8-7.8a3.3 3.3 0 0 1 4.7 4.7l-7.6 7.6a1.7 1.7 0 0 1-2.4-2.4l7-7"></path></svg></button>
+</div>
+<div style="display: flex; align-items: center; gap: 6px">
+<button class="btn btn-ghost btn-sm" type="button">Lumia Pro<svg class="i i-xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"></path></svg></button>
+<button class="send is-idle" type="button" aria-label="Envoyer"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"></path></svg></button>
+</div>
+</div>
+</div>
+<p class="xs muted">Lumia peut se tromper. Vérifiez les informations importantes.</p>
+</div>
+</main>
+</div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Lumia — Work, tâche en cours</title>
+<link rel="stylesheet" href="./lumia.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit}a:hover{color:inherit}
+</style>
+</head>
+<body>
+<div class="lm " style="min-height: 100vh; display: flex; flex-wrap: wrap; align-items: stretch">
+
+<aside class="side" style="flex: 0 0 256px; min-width: 0; display: flex; flex-direction: column; gap: 22px; padding: 12px 10px 14px 12px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 6px">
+<button class="ws" type="button" aria-label="Changer d’espace de travail">
+<svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg>
+<span style="font-size: 13.5px; font-weight: 600; letter-spacing: -.01em">Groupe Sérac</span>
+<svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--ink-3)"><path d="m8 10 4 4 4-4"></path></svg>
+</button>
+<button class="btn btn-icon btn-ghost" type="button" aria-label="Replier la barre latérale"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"></rect><path d="M9.5 4.5v15"></path></svg></button>
+</div>
+<nav class="nav" aria-label="Navigation principale">
+<a class="nav-item" href="Main.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg><span class="label">Nouvelle conversation</span><span class="kbd">⌘N</span></a>
+<a class="nav-item" href="Palette.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m20 20-4.2-4.2"></path></svg><span class="label">Rechercher</span><span class="kbd">⌘K</span></a>
+<a class="nav-item" href="Projet.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5a2 2 0 0 1 2-2h3.6l2 2h7.4a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"></path></svg><span class="label">Projets</span></a>
+<a class="nav-item" href="Bibliotheque.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 4 8.5 4.5L12 13 3.5 8.5z"></path><path d="m3.5 12.5 8.5 4.5 8.5-4.5"></path><path d="m3.5 16.5 8.5 4.5 8.5-4.5"></path></svg><span class="label">Bibliothèque</span></a>
+<a class="nav-item" href="Automatisations.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg><span class="label">Automatisations</span><span class="count">5</span></a>
+<a class="nav-item" href="Connecteurs.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3.5v4M15 3.5v4"></path><path d="M6.5 7.5h11v3a5.5 5.5 0 0 1-11 0z"></path><path d="M12 16v4.5"></path></svg><span class="label">Connecteurs</span></a>
+</nav>
+<div style="display: flex; flex-direction: column; gap: 1px">
+<div class="side-label">Épinglés</div>
+<a class="recent" href="Projet.html"><span class="tile">A</span><span class="label">Projet Alder</span></a>
+<a class="recent" href="Projet.html"><span class="tile">C</span><span class="label">Comité de direction</span></a>
+<a class="recent" href="Projet.html"><span class="tile">V</span><span class="label">Voix du client</span></a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 1px; min-height: 0">
+<div class="side-label">Récents</div>
+<a class="recent is-active" href="Work.html" aria-current="page"><span class="label">Dossier du comité d’investissement</span><svg class="mark mark-xs is-live" viewBox="0 0 24 24" aria-label="En cours" style="--mark-bg: var(--sheet)"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg></a>
+<a class="recent" href="#"><span class="label">Revue des contrats fournisseurs</span><span class="dot dot-wait" aria-label="Validation attendue"></span></a>
+<a class="recent" href="Conversation.html"><span class="label">Synthèse des entretiens clients T3</span></a>
+<a class="recent" href="Livrable.html"><span class="label">Note au comité — Alder</span></a>
+<a class="recent" href="#"><span class="label">Benchmark tarifaire Europe du Nord</span></a>
+<a class="recent" href="#"><span class="label">Préparation du séminaire de rentrée</span></a>
+<a class="recent" href="#"><span class="label">Réponse à l’appel d’offres Ardent</span></a>
+<a class="recent" href="#"><span class="label">Plan stratégique 2027 — cadrage</span></a>
+</div>
+<div class="me" style="margin-top: auto">
+<span class="av av-ink">CA</span>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column">
+<span style="font-size: 13px; font-weight: 550">Camille Arnaud</span>
+<span class="ellipsis" style="font-size: 12px; color: var(--ink-3)">Direction de la stratégie</span>
+</div>
+<a class="btn btn-icon btn-ghost" href="Administration.html" aria-label="Réglages"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"></path><circle cx="16" cy="7" r="2"></circle><circle cx="10" cy="17" r="2"></circle></svg></a>
+</div>
+</aside>
+
+<main class="sheet" style="flex: 999 1 560px; margin: 8px 8px 8px 0; height: calc(100vh - 16px); min-height: 640px">
+<header class="bar">
+<div style="display: flex; align-items: center; gap: 12px; min-width: 0">
+<div class="crumb">
+<a href="Projet.html">Projet Alder</a><span class="sep">/</span><strong class="ellipsis">Dossier du comité d’investissement</strong>
+</div>
+<span class="tag tag-lumen"><span class="dot dot-live"></span>Work · en cours</span>
+</div>
+<div style="display: flex; align-items: center; gap: 4px">
+<span class="xs muted tnum" style="margin-right: 8px">Lancé à 09:14 · 12 min</span>
+<button class="btn btn-ghost btn-sm" type="button"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12M15 6v12"></path></svg>Pause</button>
+<button class="btn btn-ghost btn-sm" type="button"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="6.5" width="11" height="11" rx="1.5"></rect></svg>Arrêter</button>
+<span class="vsep" style="margin: 0 6px"></span>
+<button class="btn btn-line btn-sm" type="button"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V4M8 8l4-4 4 4"></path><path d="M5 12.5V18a1.5 1.5 0 0 0 1.5 1.5h11A1.5 1.5 0 0 0 19 18v-5.5"></path></svg>Partager</button>
+</div>
+</header>
+
+<div style="flex: 1; min-height: 0; display: flex; flex-wrap: wrap">
+
+<section style="flex: 1 1 460px; max-width: 460px; min-width: 0; height: 100%; display: flex; flex-direction: column; border-right: 1px solid var(--line)" aria-label="Déroulé de la tâche">
+<div class="tabs" style="padding: 0 22px; flex: none">
+<a class="tab on" href="#">Plan</a>
+<a class="tab" href="#">Activité <span class="count">47</span></a>
+<a class="tab" href="#">Fichiers <span class="count">23</span></a>
+</div>
+
+<div style="flex: 1; min-height: 0; overflow-y: auto">
+<div style="display: flex; gap: 12px; padding: 16px 22px; border-bottom: 1px solid var(--line)">
+<span class="av av-sm av-ink" style="margin-top: 1px">CA</span>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<p style="font-size: 13.5px; line-height: 1.55; color: var(--ink-2); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">Prépare le dossier du comité de jeudi sur Alder : une note de synthèse de quatre pages et six slides, sur la base des comptes audités 2025. Envoie-le aux membres du comité une fois que je l’aurai validé.</p>
+<a class="link-quiet" href="#" style="font-size: 12px">Consigne complète</a>
+</div>
+</div>
+
+<div style="padding: 16px 22px 20px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 4px">
+<h2 class="eyebrow">Plan · 3 étapes sur 6</h2>
+<span class="progress is-live" style="width: 120px"><span style="width: 58%"></span></span>
+</div>
+<ol class="steps">
+<li class="step">
+<span class="step-ic done"><svg class="i i-xs" viewBox="0 0 24 24" aria-label="Terminé"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></span>
+<div><p class="step-title">Rassembler les pièces de la data room</p><p class="step-meta">23 documents · SharePoint « Data room Alder »</p></div>
+<span class="step-time">1 min</span>
+</li>
+<li class="step">
+<span class="step-ic done"><svg class="i i-xs" viewBox="0 0 24 24" aria-label="Terminé"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></span>
+<div><p class="step-title">Extraire les chiffres clés 2023 – 2025</p><p class="step-meta">États financiers audités, trois exercices</p></div>
+<span class="step-time">3 min</span>
+</li>
+<li class="step">
+<span class="step-ic flag"><svg class="i i-xs" viewBox="0 0 24 24" aria-label="Arbitrage demandé"><path d="M12 6.5v7M12 17.5v.01"></path></svg></span>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div><p class="step-title">Rapprocher avec le modèle de valorisation</p><p class="step-meta">Deux écarts relevés · en attente de vous</p></div>
+<div class="ask">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<p class="eyebrow">Votre arbitrage</p>
+<span class="xs" style="color: var(--lumen-ink)">La rédaction continue</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<p class="h3">Deux écarts avec le modèle de valorisation</p>
+<p class="small soft">EBITDA 2025 : 18,4 M€ au modèle, 17,9 M€ audités. BFR : 1,2 M€ d’écart, lié à un reclassement de créances.</p>
+</div>
+<div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap">
+<button class="btn btn-primary btn-sm" type="button">Retenir les comptes audités</button>
+<button class="btn btn-line btn-sm" type="button">Comparer</button>
+</div>
+</div>
+</div>
+<span class="step-time">2 min</span>
+</li>
+<li class="step">
+<span class="step-ic"><svg class="mark is-live" viewBox="0 0 24 24" aria-label="En cours"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg></span>
+<div>
+<p class="step-title">Rédiger la note de synthèse</p>
+<p class="step-meta">Section 3 sur 5 · Risques et points de vigilance</p>
+<div class="trace">
+<p class="trace-line"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l4.5 4.5v11.5a1 1 0 0 1-1 1H7a1.5 1.5 0 0 1-1.5-1.5v-14A1.5 1.5 0 0 1 7 3.5z"></path><path d="M14 3.5V8h4.5"></path></svg><span class="ellipsis">Lu « Alder_Rapport_annuel_2025.pdf », p. 34 – 41</span></p>
+<p class="trace-line"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6.5" rx="7" ry="2.5"></ellipse><path d="M5 6.5v11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-11M5 12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5"></path></svg><span class="ellipsis">Consulté Salesforce · historique du compte Alder</span></p>
+<p class="trace-line"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--lumen-ink)"><path d="M4.5 19.5 5.5 15 15.5 5a2.1 2.1 0 0 1 3 3l-10 10z"></path><path d="m13.5 7 3 3"></path></svg><span class="ellipsis sheen">Rédige « 3. Risques et points de vigilance »</span></p>
+</div>
+</div>
+<span class="step-time">en cours</span>
+</li>
+<li class="step is-todo">
+<span class="step-ic todo">5</span>
+<div><p class="step-title">Construire la présentation</p><p class="step-meta">Six slides, gabarit du Groupe</p></div>
+<span class="step-time"></span>
+</li>
+<li class="step is-todo">
+<span class="step-ic todo"><svg class="i i-xs" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="11" width="12" height="9" rx="1.5"></rect><path d="M8.5 11V8.5a3.5 3.5 0 0 1 7 0V11"></path></svg></span>
+<div><p class="step-title"><a href="WorkNuit.html">Envoyer le dossier au comité</a></p><p class="step-meta">Cinq destinataires · nécessite votre validation</p></div>
+<span class="step-time"></span>
+</li>
+</ol>
+</div>
+</div>
+
+<div style="flex: none; padding: 12px 16px 16px; border-top: 1px solid var(--line)">
+<div class="composer" style="border-radius: 14px; flex-direction: row; align-items: center; gap: 4px; padding: 6px 6px 6px 14px">
+<label class="sr-only" for="consigne">Ajouter une consigne</label>
+<input id="consigne" class="bare" placeholder="Ajouter une consigne en cours de route…">
+<button class="btn btn-icon btn-ghost btn-sm" type="button" aria-label="Joindre un fichier"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5 12.4 19a5 5 0 0 1-7.1-7.1l7.8-7.8a3.3 3.3 0 0 1 4.7 4.7l-7.6 7.6a1.7 1.7 0 0 1-2.4-2.4l7-7"></path></svg></button>
+<button class="send is-idle" type="button" aria-label="Envoyer" style="width: 30px; height: 30px"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"></path></svg></button>
+</div>
+</div>
+</section>
+
+<section class="desk" style="flex: 999 1 480px; min-width: 0; height: 100%; display: flex; flex-direction: column" aria-label="Livrable">
+<div style="flex: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 14px 0 22px; background: var(--sheet); border-bottom: 1px solid var(--line)">
+<div class="tabs" style="border: 0; gap: 20px">
+<a class="tab on" href="Livrable.html"><span class="dot dot-live" style="width: 6px; height: 6px"></span>Note de synthèse</a>
+<a class="tab" href="#">Présentation <span class="tag" style="height: 19px">à venir</span></a>
+<a class="tab" href="#">Sources <span class="count">23</span></a>
+</div>
+<div style="display: flex; align-items: center; gap: 2px">
+<a class="btn btn-ghost btn-sm" href="Livrable.html"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10M19.5 4.5 11 13"></path><path d="M18 14v4.5a1 1 0 0 1-1 1H5.5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1H10"></path></svg>Ouvrir</a>
+<button class="btn btn-icon btn-ghost btn-sm" type="button" aria-label="Télécharger"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M8 11l4 4 4-4"></path><path d="M5 19.5h14"></path></svg></button>
+</div>
+</div>
+
+<div style="flex: 1; min-height: 0; overflow-y: auto; padding: 24px 36px 36px">
+<article class="paper doc" style="max-width: 600px; margin: 0 auto; padding: 40px 56px 52px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px">
+<span class="meta">Groupe Sérac · Comité d’investissement</span>
+<span class="meta">Confidentiel</span>
+</div>
+<h1 style="margin-top: 22px">Projet Alder</h1>
+<p class="sub">Acquisition de 70 % du capital d’Alder Ventilation</p>
+<p class="meta" style="margin-top: 14px">Séance du jeudi 8 octobre 2026 · version de travail</p>
+<div class="rule"></div>
+
+<h2><span class="n">1.</span>Contexte et thèse d’investissement</h2>
+<p>Alder conçoit des systèmes de ventilation pour l’habitat collectif dans quatre pays européens. L’opération compléterait notre offre en génie climatique et nous ouvrirait un réseau de 1 200 installateurs.</p>
+
+<h2><span class="n">2.</span>Performance financière</h2>
+<table>
+<thead><tr><th>En M€</th><th>2023</th><th>2024</th><th>2025</th></tr></thead>
+<tbody>
+<tr><td>Chiffre d’affaires</td><td>98,2</td><td>112,6</td><td>124,1</td></tr>
+<tr><td>EBITDA</td><td>14,1</td><td>16,3</td><td><span class="hl">17,9</span></td></tr>
+<tr><td>Marge d’EBITDA</td><td>14,4 %</td><td>14,5 %</td><td>14,4 %</td></tr>
+</tbody>
+</table>
+
+<h2><span class="n">3.</span>Risques et points de vigilance</h2>
+<p>Trois points appellent une attention particulière. Le premier tient à la concentration du portefeuille : les cinq premiers clients représentent 41 % du chiffre d’affaires, dont un seul pèse 14 %<span class="caret"></span></p>
+<div style="display: flex; flex-direction: column; gap: 9px; margin-top: 14px" aria-hidden="true">
+<div class="ghost" style="width: 100%"></div>
+<div class="ghost" style="width: 94%"></div>
+<div class="ghost" style="width: 61%"></div>
+</div>
+</article>
+</div>
+
+<div style="flex: none; height: 36px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 22px; border-top: 1px solid var(--line); background: var(--sheet); font-size: 12px; color: var(--ink-3)">
+<span class="tnum">Rédigé par Lumia · 1 240 mots · 11 sources citées</span>
+<span>Enregistré automatiquement</span>
+</div>
+</section>
+
+</div>
+</main>
+</div>
+</body>
+</html>

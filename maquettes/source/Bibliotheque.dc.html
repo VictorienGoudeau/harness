@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Lumia — Bibliothèque</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./lumia.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit}a:hover{color:inherit}
+</style>
+</helmet>
+<div class="lm {{themeClass}}" style="min-height: 100vh; display: flex; flex-wrap: wrap; align-items: stretch">
+
+<aside class="side" style="flex: 0 0 256px; min-width: 0; display: flex; flex-direction: column; gap: 22px; padding: 12px 10px 14px 12px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 6px">
+<button class="ws" type="button" aria-label="Changer d’espace de travail">
+<svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg>
+<span style="font-size: 13.5px; font-weight: 600; letter-spacing: -.01em">Groupe Sérac</span>
+<svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--ink-3)"><path d="m8 10 4 4 4-4"></path></svg>
+</button>
+<button class="btn btn-icon btn-ghost" type="button" aria-label="Replier la barre latérale"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"></rect><path d="M9.5 4.5v15"></path></svg></button>
+</div>
+<nav class="nav" aria-label="Navigation principale">
+<a class="nav-item" href="Main.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg><span class="label">Nouvelle conversation</span><span class="kbd">⌘N</span></a>
+<a class="nav-item" href="Palette.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m20 20-4.2-4.2"></path></svg><span class="label">Rechercher</span><span class="kbd">⌘K</span></a>
+<a class="nav-item" href="Projet.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5a2 2 0 0 1 2-2h3.6l2 2h7.4a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"></path></svg><span class="label">Projets</span></a>
+<a class="nav-item is-active" href="Bibliotheque.dc.html" aria-current="page"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 4 8.5 4.5L12 13 3.5 8.5z"></path><path d="m3.5 12.5 8.5 4.5 8.5-4.5"></path><path d="m3.5 16.5 8.5 4.5 8.5-4.5"></path></svg><span class="label">Bibliothèque</span></a>
+<a class="nav-item" href="Automatisations.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg><span class="label">Automatisations</span><span class="count">5</span></a>
+<a class="nav-item" href="Connecteurs.dc.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3.5v4M15 3.5v4"></path><path d="M6.5 7.5h11v3a5.5 5.5 0 0 1-11 0z"></path><path d="M12 16v4.5"></path></svg><span class="label">Connecteurs</span></a>
+</nav>
+<div style="display: flex; flex-direction: column; gap: 1px">
+<div class="side-label">Épinglés</div>
+<a class="recent" href="Projet.dc.html"><span class="tile">A</span><span class="label">Projet Alder</span></a>
+<a class="recent" href="Projet.dc.html"><span class="tile">C</span><span class="label">Comité de direction</span></a>
+<a class="recent" href="Projet.dc.html"><span class="tile">V</span><span class="label">Voix du client</span></a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 1px; min-height: 0">
+<div class="side-label">Récents</div>
+<a class="recent" href="Work.dc.html"><span class="label">Dossier du comité d’investissement</span><svg class="mark mark-xs is-live" viewBox="0 0 24 24" aria-label="En cours"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg></a>
+<a class="recent" href="#"><span class="label">Revue des contrats fournisseurs</span><span class="dot dot-wait" aria-label="Validation attendue"></span></a>
+<a class="recent" href="Conversation.dc.html"><span class="label">Synthèse des entretiens clients T3</span></a>
+<a class="recent" href="Livrable.dc.html"><span class="label">Note au comité — Alder</span></a>
+<a class="recent" href="#"><span class="label">Benchmark tarifaire Europe du Nord</span></a>
+<a class="recent" href="#"><span class="label">Préparation du séminaire de rentrée</span></a>
+<a class="recent" href="#"><span class="label">Réponse à l’appel d’offres Ardent</span></a>
+<a class="recent" href="#"><span class="label">Plan stratégique 2027 — cadrage</span></a>
+</div>
+<div class="me" style="margin-top: auto">
+<span class="av av-ink">CA</span>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column">
+<span style="font-size: 13px; font-weight: 550">Camille Arnaud</span>
+<span class="ellipsis" style="font-size: 12px; color: var(--ink-3)">Direction de la stratégie</span>
+</div>
+<a class="btn btn-icon btn-ghost" href="Administration.dc.html" aria-label="Réglages"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"></path><circle cx="16" cy="7" r="2"></circle><circle cx="10" cy="17" r="2"></circle></svg></a>
+</div>
+</aside>
+
+<main class="sheet" style="flex: 999 1 560px; margin: 8px 8px 8px 0; height: calc(100vh - 16px); min-height: 640px">
+<header class="bar">
+<h1 style="font-size: 15px; font-weight: 600; letter-spacing: -.012em">Bibliothèque</h1>
+<div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap">
+<label class="search" style="width: 260px">
+<svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m20 20-4.2-4.2"></path></svg>
+<span class="sr-only">Rechercher un livrable</span>
+<input type="search" placeholder="Rechercher un livrable">
+</label>
+<button class="btn btn-ghost btn-sm" type="button">Récents<svg class="i i-xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"></path></svg></button>
+<div class="seg" role="group" aria-label="Affichage">
+<button class="on" type="button" aria-label="Grille" aria-pressed="true" style="padding: 0 7px"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"></rect><rect x="13" y="4" width="7" height="7" rx="1.5"></rect><rect x="4" y="13" width="7" height="7" rx="1.5"></rect><rect x="13" y="13" width="7" height="7" rx="1.5"></rect></svg></button>
+<button type="button" aria-label="Liste" aria-pressed="false" style="padding: 0 7px"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7h12M8 12h12M8 17h12M4 7h.01M4 12h.01M4 17h.01"></path></svg></button>
+</div>
+</div>
+</header>
+
+<div style="flex: 1; min-height: 0; overflow-y: auto; padding: 20px 28px 40px; display: flex; flex-direction: column; gap: 26px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap">
+<div class="seg seg-lg" role="group" aria-label="Type de livrable">
+<button class="on" type="button" aria-pressed="true">Tout <span class="count">38</span></button>
+<button type="button" aria-pressed="false">Documents <span class="count">21</span></button>
+<button type="button" aria-pressed="false">Présentations <span class="count">7</span></button>
+<button type="button" aria-pressed="false">Tableurs <span class="count">6</span></button>
+<button type="button" aria-pressed="false">Synthèses <span class="count">4</span></button>
+</div>
+<button class="btn btn-ghost btn-sm" type="button"><svg class="i i-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"></path></svg>Tous les projets</button>
+</div>
+
+<section style="display: flex; flex-direction: column; gap: 14px" aria-labelledby="semaine">
+<h2 id="semaine" class="eyebrow">Cette semaine</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr)); gap: 26px 22px">
+
+<a class="lib-card" href="Livrable.dc.html">
+<div class="thumb">
+<div class="sheetlet">
+<span style="font-family: var(--sans); font-size: 5.5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3)">Comité d’investissement</span>
+<span style="font-family: var(--serif); font-size: 15px; font-weight: 500; line-height: 1.05; color: var(--paper-ink); margin: 6px 0 2px">Projet Alder</span>
+<span style="font-family: var(--serif); font-style: italic; font-size: 7.5px; color: var(--ink-3); margin-bottom: 8px">Note de synthèse</span>
+<span class="tl dk" style="width: 46%; margin-bottom: 2px"></span>
+<span class="tl" style="width: 100%"></span><span class="tl" style="width: 96%"></span><span class="tl" style="width: 88%"></span>
+<span class="tl dk" style="width: 40%; margin: 6px 0 2px"></span>
+<span class="tl" style="width: 100%"></span><span class="tl" style="width: 92%"></span>
+</div>
+<span class="tag corner">v3</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 3px; padding: 0 2px; min-width: 0">
+<span class="row-title ellipsis" style="font-size: 13.5px">Note au comité d’investissement</span>
+<span class="row-meta ellipsis">Document · Projet Alder · 10:42</span>
+</div>
+</a>
+
+<a class="lib-card" href="#">
+<div class="thumb" style="align-items: center; padding: 20px">
+<div class="slidelet" style="margin: 0; width: 92%">
+<span style="font-size: 5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3)">Groupe Sérac</span>
+<div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 10px">
+<span style="font-family: var(--serif); font-size: 15px; line-height: 1.05; color: var(--paper-ink)">Projet Alder<br><span style="font-style: italic; font-size: 8px; color: var(--ink-3)">Comité d’investissement</span></span>
+<span style="display: flex; align-items: flex-end; gap: 2px; height: 26px" aria-hidden="true"><span style="width: 5px; height: 40%; background: var(--line-strong); border-radius: 1px 1px 0 0"></span><span style="width: 5px; height: 58%; background: var(--line-strong); border-radius: 1px 1px 0 0"></span><span style="width: 5px; height: 72%; background: var(--line-strong); border-radius: 1px 1px 0 0"></span><span style="width: 5px; height: 100%; background: var(--ink-2); border-radius: 1px 1px 0 0"></span></span>
+</div>
+</div>
+<span class="tag corner">6 slides</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 3px; padding: 0 2px; min-width: 0">
+<span class="row-title ellipsis" style="font-size: 13.5px">Présentation au comité — Alder</span>
+<span class="row-meta ellipsis">Présentation · Projet Alder · 10:58</span>
+</div>
+</a>
+
+<a class="lib-card" href="Conversation.dc.html">
+<div class="thumb">
+<div class="sheetlet">
+<span style="font-family: var(--sans); font-size: 5.5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3)">Voix du client</span>
+<span style="font-family: var(--serif); font-size: 13px; font-weight: 500; line-height: 1.1; color: var(--paper-ink); margin: 6px 0 8px">Entretiens clients, troisième trimestre</span>
+<span class="tl" style="width: 100%"></span><span class="tl" style="width: 94%"></span>
+<span style="font-family: var(--serif); font-style: italic; font-size: 7px; line-height: 1.35; color: var(--ink-2); margin: 6px 0">« On ne remet pas en cause vos produits… »</span>
+<span class="tl" style="width: 100%"></span><span class="tl" style="width: 72%"></span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 3px; padding: 0 2px; min-width: 0">
+<span class="row-title ellipsis" style="font-size: 13.5px">Synthèse des entretiens clients T3</span>
+<span class="row-meta ellipsis">Document · Voix du client · hier</span>
+</div>
+</a>
+
+<a class="lib-card" href="Automatisations.dc.html">
+<div class="thumb">
+<div class="sheetlet" style="gap: 6px">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<span style="font-family: var(--sans); font-size: 5.5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3)">Semaine 41</span>
+<svg class="mark" viewBox="0 0 24 24" aria-hidden="true" style="width: 10px; height: 10px; --mark-bg: var(--paper)"><circle class="ring" cx="12" cy="12" r="8.25" style="stroke-width: 2.4"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.4"></circle></g></svg>
+</div>
+<span style="font-family: var(--serif); font-size: 13px; font-weight: 500; line-height: 1.1; color: var(--paper-ink); margin: 2px 0 6px">Ventes de la semaine</span>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-bottom: 4px">
+<span style="height: 22px; border-radius: 3px; background: var(--sunken); box-shadow: inset 0 0 0 1px var(--line)"></span>
+<span style="height: 22px; border-radius: 3px; background: var(--sunken); box-shadow: inset 0 0 0 1px var(--line)"></span>
+<span style="height: 22px; border-radius: 3px; background: var(--sunken); box-shadow: inset 0 0 0 1px var(--line)"></span>
+</div>
+<span class="tl" style="width: 100%"></span><span class="tl" style="width: 90%"></span><span class="tl" style="width: 66%"></span>
+</div>
+<span class="tag corner">Automatisation</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 3px; padding: 0 2px; min-width: 0">
+<span class="row-title ellipsis" style="font-size: 13.5px">Synthèse hebdomadaire des ventes</span>
+<span class="row-meta ellipsis">Synthèse · livrée lundi à 08:02</span>
+</div>
+</a>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 14px" aria-labelledby="septembre">
+<h2 id="septembre" class="eyebrow">Septembre</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr)); gap: 26px 22px">
+
+<a class="lib-card" href="#">
+<div class="thumb">
+<div class="sheetlet" style="width: 84%; padding: 12px 0 0; gap: 0">
+<span style="font-family: var(--sans); font-size: 7px; font-weight: 600; color: var(--paper-ink); padding: 0 10px 8px">Benchmark tarifaire · Europe du Nord</span>
+<div style="display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; border-top: 1px solid var(--line-strong)">
+<span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line)"></span>
+<span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line)"></span>
+<span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); background: var(--lumen-tint)"></span><span style="height: 13px; border-bottom: 1px solid var(--line)"></span>
+<span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line)"></span>
+<span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line)"></span>
+<span style="height: 13px; border-right: 1px solid var(--line)"></span><span style="height: 13px; border-right: 1px solid var(--line)"></span><span style="height: 13px; border-right: 1px solid var(--line)"></span><span style="height: 13px"></span>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 3px; padding: 0 2px; min-width: 0">
+<span class="row-title ellipsis" style="font-size: 13.5px">Benchmark tarifaire — Europe du Nord</span>
+<span class="row-meta ellipsis">Tableur · Direction commerciale · 28 sept.</span>
+</div>
+</a>
+
+<a class="lib-card" href="#">
+<div class="thumb">
+<div class="sheetlet">
+<span style="font-family: var(--sans); font-size: 5.5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3)">Appel d’offres</span>
+<span style="font-family: var(--serif); font-size: 13px; font-weight: 500; line-height: 1.1; color: var(--paper-ink); margin: 6px 0 8px">Réponse au dossier de consultation Ardent</span>
+<span class="tl" style="width: 100%"></span><span class="tl" style="width: 96%"></span><span class="tl" style="width: 84%"></span>
+<span class="tl dk" style="width: 36%; margin: 6px 0 2px"></span>
+<span class="tl" style="width: 100%"></span><span class="tl" style="width: 90%"></span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 3px; padding: 0 2px; min-width: 0">
+<span class="row-title ellipsis" style="font-size: 13.5px">Réponse à l’appel d’offres Ardent</span>
+<span class="row-meta ellipsis">Document · Commercial · 24 sept.</span>
+</div>
+</a>
+
+<a class="lib-card" href="#">
+<div class="thumb" style="align-items: center; padding: 20px">
+<div class="slidelet" style="margin: 0; width: 92%; background: var(--ink)">
+<span style="font-size: 5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-4)">Séminaire de rentrée</span>
+<span style="font-family: var(--serif); font-size: 15px; line-height: 1.05; color: var(--sheet)">Cap 2027<br><span style="font-style: italic; font-size: 8px; color: var(--ink-4)">Programme des deux journées</span></span>
+</div>
+<span class="tag corner">12 slides</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 3px; padding: 0 2px; min-width: 0">
+<span class="row-title ellipsis" style="font-size: 13.5px">Séminaire de rentrée — programme</span>
+<span class="row-meta ellipsis">Présentation · Comité de direction · 19 sept.</span>
+</div>
+</a>
+
+<a class="lib-card" href="#">
+<div class="thumb">
+<div class="sheetlet" style="width: 84%; padding: 12px 0 0; gap: 0">
+<span style="font-family: var(--sans); font-size: 7px; font-weight: 600; color: var(--paper-ink); padding: 0 10px 8px">Contrats fournisseurs · clauses</span>
+<div style="display: grid; grid-template-columns: 2fr 1fr 1fr; border-top: 1px solid var(--line-strong)">
+<span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line)"></span>
+<span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); background: var(--brick-tint)"></span>
+<span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line)"></span>
+<span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); background: var(--brick-tint)"></span>
+<span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line)"></span><span style="height: 13px; border-bottom: 1px solid var(--line)"></span>
+<span style="height: 13px; border-right: 1px solid var(--line)"></span><span style="height: 13px; border-right: 1px solid var(--line)"></span><span style="height: 13px"></span>
+</div>
+</div>
+<span class="tag tag-lumen corner">À valider</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 3px; padding: 0 2px; min-width: 0">
+<span class="row-title ellipsis" style="font-size: 13.5px">Revue des contrats fournisseurs</span>
+<span class="row-meta ellipsis">Tableur · Achats · 16 sept.</span>
+</div>
+</a>
+</div>
+</section>
+</div>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["Clair","Sombre"],"default":"Clair"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { themeClass: this.props.theme === 'Sombre' ? 'dark' : '' };
+  }
+}
+</script>
+</body>
+</html>
