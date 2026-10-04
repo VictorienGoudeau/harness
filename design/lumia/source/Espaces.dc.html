@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Lumia — Espace Direction Juridique</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap">
+<style>
+body{margin:0;background:#F8F7F4;color:#19181C;font-family:'Instrument Sans',system-ui,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:#875F0E;text-decoration:none}a:hover{color:#5E4209}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none;padding:0}
+input::placeholder{color:#8A8782}
+.srf{font-family:'Newsreader',Georgia,serif;font-weight:400;letter-spacing:-0.01em}
+.cap{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#6E6B6A;font-weight:500}
+.rail{width:64px;background:#E8E5DE;border-right:1px solid #E0DCD3;display:flex;flex-direction:column;align-items:center;padding:16px 0;gap:4px;box-sizing:border-box}
+.rl{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#4F4D52}
+.rl:hover{background:#DEDAD1;color:#19181C}
+.rl.on{background:#19181C;color:#F8F7F4}
+.pan{width:264px;background:#F1EFEA;border-right:1px solid #E0DCD3;box-sizing:border-box;display:flex;flex-direction:column;padding:16px 12px;gap:4px}
+.main{flex:999 1 560px;min-width:0;display:flex;flex-direction:column;min-height:100vh}
+.ib{width:32px;height:32px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;color:#4F4D52}
+.ib:hover{background:#ECE9E2;color:#19181C}
+.btn{display:inline-flex;align-items:center;gap:8px;height:32px;padding:0 12px;border-radius:9px;font-weight:500;font-size:13px}
+.btn-ink{background:#19181C;color:#F8F7F4}
+.btn-out{border:1px solid #CFCBC2;color:#19181C}
+.chip{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 12px;border-radius:999px;border:1px solid #E0DCD3;font-size:12.5px;color:#4F4D52;background:#FFFFFF}
+.li{display:flex;align-items:center;gap:12px;padding:9px 12px;border-radius:10px;color:#19181C;font-size:13.5px}
+.li:hover{background:#E9E6DF;color:#19181C}
+.li.on{background:#E2DFD7}
+.li .k{width:28px;height:28px;border-radius:8px;background:#19181C;color:#F8F7F4;display:inline-flex;align-items:center;justify-content:center;font-family:'Newsreader',Georgia,serif;font-size:15px;flex-shrink:0}
+.li .k.q{background:#E0DCD3;color:#19181C}
+.tab{height:40px;display:inline-flex;align-items:center;font-size:13.5px;color:#6E6B6A;border-bottom:2px solid transparent;padding:0 2px}
+.tab:hover{color:#19181C}
+.tab.on{color:#19181C;border-bottom-color:#19181C}
+.row{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) minmax(0,.8fr) 24px;gap:16px;align-items:center;padding:12px 0;border-top:1px solid #E0DCD3;font-size:13.5px;color:#19181C}
+.row:last-child{border-bottom:1px solid #E0DCD3}
+.row .m{font-size:12.5px;color:#6E6B6A}
+.av{width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:10.5px;font-weight:600;letter-spacing:0.04em;border:2px solid #F8F7F4;box-sizing:border-box}
+.rule{display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px;padding:12px 0;border-top:1px solid #E0DCD3;font-size:13.5px;line-height:1.5}
+.rule:last-child{border-bottom:1px solid #E0DCD3}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</helmet>
+<div style="display:flex;flex-wrap:wrap;min-height:100vh;background:#F8F7F4">
+
+<nav class="rail" aria-label="Navigation principale">
+  <a href="Main.dc.html" aria-label="Lumia" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+    <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="12" cy="14" r="7" fill="#C8961E"></circle><circle cx="14" cy="12" r="11" stroke="#19181C" stroke-width="1"></circle></svg>
+  </a>
+  <a class="rl" href="Main.dc.html" aria-label="Accueil"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg></a>
+  <a class="rl" href="Conversation.dc.html" aria-label="Conversations"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 15a2 2 0 0 1-2 2H9l-5 4V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"></path></svg></a>
+  <a class="rl" href="Travaux.dc.html" aria-label="Travaux"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11"></path><path d="M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"></path></svg></a>
+  <a class="rl on" href="Espaces.dc.html" aria-label="Espaces"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"></rect><rect x="13" y="4" width="7" height="7" rx="1.5"></rect><rect x="4" y="13" width="7" height="7" rx="1.5"></rect><rect x="13" y="13" width="7" height="7" rx="1.5"></rect></svg></a>
+  <div style="flex:1"></div>
+  <a class="rl" href="Reglages.dc.html" aria-label="Réglages"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h8M18 7h2M4 17h4M12 17h8"></path><circle cx="15" cy="7" r="2.5"></circle><circle cx="9" cy="17" r="2.5"></circle></svg></a>
+  <button aria-label="Compte de Camille Roux" style="width:32px;height:32px;border-radius:50%;background:#19181C;color:#F8F7F4;font-size:11.5px;font-weight:600;letter-spacing:0.04em;display:flex;align-items:center;justify-content:center;margin-top:8px">CR</button>
+</nav>
+
+<aside class="pan" aria-label="Espaces">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:0 4px 8px 12px">
+    <span class="srf" style="font-size:20px">Espaces</span>
+    <button class="ib" aria-label="Créer un espace"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg></button>
+  </div>
+  <div class="cap" style="padding:10px 12px 6px">Les miens</div>
+  <a class="li on" href="Espaces.dc.html"><span class="k">J</span><span style="display:flex;flex-direction:column;min-width:0"><span>Direction Juridique</span><span style="font-size:12px;color:#6E6B6A">12 membres</span></span></a>
+  <a class="li" href="Espaces.dc.html"><span class="k q">C</span><span style="display:flex;flex-direction:column;min-width:0"><span>Comité de direction</span><span style="font-size:12px;color:#6E6B6A">8 membres</span></span></a>
+  <a class="li" href="Espaces.dc.html"><span class="k q">R</span><span style="display:flex;flex-direction:column;min-width:0"><span>RH &amp; Talents</span><span style="font-size:12px;color:#6E6B6A">6 membres</span></span></a>
+  <a class="li" href="Espaces.dc.html"><span class="k q">M</span><span style="display:flex;flex-direction:column;min-width:0"><span>Marketing Q4</span><span style="font-size:12px;color:#6E6B6A">9 membres</span></span></a>
+  <div class="cap" style="padding:18px 12px 6px">Ouverts à tous</div>
+  <a class="li" href="Espaces.dc.html"><span class="k q">E</span><span style="display:flex;flex-direction:column;min-width:0"><span>Entreprise</span><span style="font-size:12px;color:#6E6B6A">Politiques et procédures</span></span></a>
+  <a class="li" href="Espaces.dc.html"><span class="k q">I</span><span style="display:flex;flex-direction:column;min-width:0"><span>Informatique &amp; outils</span><span style="font-size:12px;color:#6E6B6A">Aide et procédures</span></span></a>
+</aside>
+
+<main class="main">
+  <header style="height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 20px 0 32px;box-sizing:border-box;border-bottom:1px solid #E0DCD3;gap:16px;flex-wrap:wrap">
+    <span class="cap" style="color:#19181C">Espace</span>
+    <div style="display:flex;align-items:center;gap:6px">
+      <button class="btn btn-out"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-5-6.3"></path></svg>Inviter</button>
+      <button class="btn btn-ink"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg>Nouveau dans cet espace</button>
+    </div>
+  </header>
+
+  <div style="flex:1;padding:44px 48px 48px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center">
+    <div style="width:100%;max-width:960px;display:flex;flex-direction:column">
+
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:32px;flex-wrap:wrap">
+        <div style="display:flex;gap:20px;align-items:flex-start;min-width:0">
+          <span style="width:56px;height:56px;border-radius:14px;background:#19181C;color:#F8F7F4;display:inline-flex;align-items:center;justify-content:center;font-family:'Newsreader',Georgia,serif;font-size:30px;flex-shrink:0">J</span>
+          <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
+            <h1 class="srf" style="margin:0;font-size:36px;line-height:1.1;font-weight:400">Direction Juridique</h1>
+            <p style="margin:0;font-size:15px;color:#4F4D52;max-width:560px">Contrats, conformité et contentieux. Lumia connaît ici les modèles de l'équipe et répond dans le vocabulaire du service.</p>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
+          <div style="display:flex">
+            <span class="av" style="background:#19181C;color:#F8F7F4">CR</span>
+            <span class="av" style="background:#E0DCD3;color:#19181C;margin-left:-8px">ML</span>
+            <span class="av" style="background:#C8961E;color:#19181C;margin-left:-8px">AD</span>
+            <span class="av" style="background:#4F4D52;color:#F8F7F4;margin-left:-8px">TB</span>
+            <span class="av" style="background:#F1EFEA;color:#4F4D52;margin-left:-8px">+8</span>
+          </div>
+          <span style="font-size:12.5px;color:#6E6B6A">12 membres · géré par Marie Laurent</span>
+        </div>
+      </div>
+
+      <nav aria-label="Sections de l'espace" style="display:flex;gap:24px;border-bottom:1px solid #E0DCD3;margin-top:36px;overflow-x:auto">
+        <a class="tab on" href="#apercu">Aperçu</a>
+        <a class="tab" href="#connaissances">Connaissances <span style="margin-left:6px;font-size:11.5px;color:#8A8782">48</span></a>
+        <a class="tab" href="Conversation.dc.html">Conversations <span style="margin-left:6px;font-size:11.5px;color:#8A8782">126</span></a>
+        <a class="tab" href="Travaux.dc.html">Travaux <span style="margin-left:6px;font-size:11.5px;color:#8A8782">3</span></a>
+        <a class="tab" href="#regles">Règles</a>
+      </nav>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(400px,100%),1fr));gap:48px;margin-top:36px">
+
+        <section id="connaissances">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px">
+            <h2 class="srf" style="margin:0;font-size:22px;font-weight:400">Connaissances</h2>
+            <a href="#ajouter" style="font-size:12.5px">Ajouter une source</a>
+          </div>
+          <div class="row"><span style="display:flex;align-items:center;gap:10px;min-width:0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6E6B6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"></path><path d="M4 19a2 2 0 0 1 2-2h13"></path></svg><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Modèles de contrats</span></span><span class="m">Dossier partagé · 23 fichiers</span><span class="m">Synchronisé</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A8782" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></div>
+          <div class="row"><span style="display:flex;align-items:center;gap:10px;min-width:0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6E6B6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"></path><path d="M4 19a2 2 0 0 1 2-2h13"></path></svg><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Jurisprudence interne</span></span><span class="m">Base de connaissances · 310 fiches</span><span class="m">Synchronisé</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A8782" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></div>
+          <div class="row"><span style="display:flex;align-items:center;gap:10px;min-width:0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6E6B6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Boîte juridique@</span></span><span class="m">Messagerie partagée</span><span class="m">Lecture seule</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A8782" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></div>
+          <div class="row"><span style="display:flex;align-items:center;gap:10px;min-width:0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#875F0E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Contentieux 2020–2025</span></span><span class="m">Dossier restreint · 64 fichiers</span><span class="m" style="color:#875F0E">Sur accord</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A8782" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></div>
+        </section>
+
+        <section id="regles">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px">
+            <h2 class="srf" style="margin:0;font-size:22px;font-weight:400">Règles de l'espace</h2>
+            <a href="#modifier" style="font-size:12.5px">Modifier</a>
+          </div>
+          <div class="rule"><span class="srf" style="color:#875F0E;font-size:16px;padding-top:1px">1</span><span>Toujours citer la clause et la page quand une réponse s'appuie sur un contrat.</span></div>
+          <div class="rule"><span class="srf" style="color:#875F0E;font-size:16px;padding-top:1px">2</span><span>Les notes suivent le modèle « Note juridique » : contexte, analyse, recommandation, en une page.</span></div>
+          <div class="rule"><span class="srf" style="color:#875F0E;font-size:16px;padding-top:1px">3</span><span>Ne jamais envoyer de document hors de l'entreprise sans accord explicite d'un membre.</span></div>
+          <div class="rule"><span class="srf" style="color:#875F0E;font-size:16px;padding-top:1px">4</span><span>Ton formel, vouvoiement, pas de superlatifs.</span></div>
+        </section>
+
+      </div>
+
+      <section style="margin-top:48px">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px">
+          <h2 class="srf" style="margin:0;font-size:22px;font-weight:400">Activité récente</h2>
+          <a href="Travaux.dc.html" style="font-size:12.5px">Tout voir</a>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:12px">
+          <a href="Travail.dc.html" style="border:1px solid #E0DCD3;border-radius:14px;background:#FFFFFF;padding:16px 18px;display:flex;flex-direction:column;gap:10px;color:#19181C">
+            <span style="display:flex;align-items:center;gap:8px;font-size:12px;color:#6E6B6A"><span style="width:7px;height:7px;border-radius:50%;background:#C8961E"></span>Travail en cours · Camille R.</span>
+            <span style="font-size:14.5px;line-height:1.4">Analyser le contrat cadre et préparer une note de risques</span>
+          </a>
+          <a href="Conversation.dc.html" style="border:1px solid #E0DCD3;border-radius:14px;background:#FFFFFF;padding:16px 18px;display:flex;flex-direction:column;gap:10px;color:#19181C">
+            <span style="display:flex;align-items:center;gap:8px;font-size:12px;color:#6E6B6A"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 15a2 2 0 0 1-2 2H9l-5 4V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"></path></svg>Conversation · Marie L. · il y a 3 h</span>
+            <span style="font-size:14.5px;line-height:1.4">Clause de confidentialité — version courte</span>
+          </a>
+          <a href="#ajout" style="border:1px solid #E0DCD3;border-radius:14px;background:#FFFFFF;padding:16px 18px;display:flex;flex-direction:column;gap:10px;color:#19181C">
+            <span style="display:flex;align-items:center;gap:8px;font-size:12px;color:#6E6B6A"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"></path><path d="M4 19a2 2 0 0 1 2-2h13"></path></svg>Connaissances · Antoine D. · hier</span>
+            <span style="font-size:14.5px;line-height:1.4">Six nouveaux modèles ajoutés à « Modèles de contrats »</span>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1000}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

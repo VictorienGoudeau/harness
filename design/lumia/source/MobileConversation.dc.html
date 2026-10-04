@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Lumia mobile — Conversation</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap">
+<style>
+body{margin:0;background:#F8F7F4;color:#19181C;font-family:'Instrument Sans',system-ui,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:#875F0E;text-decoration:none}a:hover{color:#5E4209}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none;padding:0}
+textarea::placeholder{color:#8A8782}
+.srf{font-family:'Newsreader',Georgia,serif;font-weight:400;letter-spacing:-0.01em}
+.cap{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#6E6B6A;font-weight:500}
+.chip{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 12px;border-radius:999px;border:1px solid #E0DCD3;font-size:12.5px;color:#19181C;background:#FFFFFF;white-space:nowrap}
+.msg{display:flex;flex-direction:column;gap:8px;font-size:15.5px;line-height:1.6}
+.msg p{margin:0 0 10px}
+.msg p:last-child{margin-bottom:0}
+.msg ul{margin:0 0 10px;padding-left:18px}
+.msg li{margin:4px 0}
+.msg h3{font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:21px;margin:2px 0 6px;letter-spacing:-0.01em}
+.who{display:flex;align-items:center;gap:8px}
+.cite{font-size:10.5px;vertical-align:super;font-weight:600;color:#875F0E;margin-left:1px}
+.step{display:flex;align-items:center;gap:10px;padding:9px 12px;font-size:12.5px;color:#4F4D52;border-top:1px solid #E8E5DE}
+.step:first-child{border-top:0}
+.ib{width:44px;height:44px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;color:#4F4D52}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</helmet>
+<div style="width:390px;height:844px;box-sizing:border-box;background:#F8F7F4;display:flex;flex-direction:column;overflow:hidden">
+
+  <header style="display:flex;align-items:center;gap:6px;padding:54px 12px 10px;border-bottom:1px solid #E0DCD3">
+    <a href="MobileAccueil.dc.html" aria-label="Retour" class="ib"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></a>
+    <div style="flex:1;min-width:0;display:flex;flex-direction:column">
+      <span class="cap" style="color:#875F0E">Direction Juridique</span>
+      <span class="srf" style="font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Politique de télétravail 2025</span>
+    </div>
+    <button class="ib" aria-label="Plus d'options"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1.2"></circle><circle cx="12" cy="12" r="1.2"></circle><circle cx="19" cy="12" r="1.2"></circle></svg></button>
+  </header>
+
+  <div style="flex:1;overflow:hidden;padding:24px 20px 0;display:flex;flex-direction:column;gap:28px">
+    <div class="msg">
+      <div class="who"><span class="cap" style="color:#4F4D52">Vous</span><span style="font-size:11.5px;color:#8A8782">14:02</span></div>
+      <p>Peux-tu me résumer la politique de télétravail mise à jour et me dire ce qui change par rapport à 2024 ?</p>
+    </div>
+
+    <div class="msg">
+      <div class="who"><svg width="12" height="12" viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="12" cy="14" r="7" fill="#C8961E"></circle><circle cx="14" cy="12" r="11" stroke="#19181C" stroke-width="1.6"></circle></svg><span class="cap" style="color:#19181C">Lumia</span><span style="font-size:11.5px;color:#8A8782">14:02 · 2 sources</span></div>
+      <div style="border:1px solid #E0DCD3;border-radius:12px;background:#FFFFFF;overflow:hidden">
+        <div class="step"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8z"></path><path d="M14 3v5h5"></path></svg><span style="flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Politique télétravail 2025.pdf</span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2E6B4E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg></div>
+        <div class="step"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8z"></path><path d="M14 3v5h5"></path></svg><span style="flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Comparé à Accord télétravail 2024.pdf</span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2E6B4E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg></div>
+      </div>
+      <div>
+        <h3>Ce qui change en 2025</h3>
+        <ul>
+          <li><strong style="font-weight:500">Trois jours par semaine</strong> au lieu de deux, avec une journée commune par équipe.<a class="cite" href="#s1">1</a></li>
+          <li><strong style="font-weight:500">Télétravail depuis l'étranger</strong> encadré : dix jours ouvrés par an sur déclaration.<a class="cite" href="#s1">1</a></li>
+          <li><strong style="font-weight:500">Indemnité d'équipement</strong> en forfait annuel unique, sans justificatif.<a class="cite" href="#s2">2</a></li>
+        </ul>
+        <p>Éligibilité, période d'essai et réversibilité sont inchangées.<a class="cite" href="#s2">2</a></p>
+      </div>
+      <div style="display:flex;gap:8px;overflow:hidden;margin-top:4px">
+        <a class="chip" id="s1" href="#s1"><span style="font-size:10.5px;font-weight:600;color:#875F0E">1</span>Politique télétravail 2025</a>
+        <a class="chip" id="s2" href="#s2"><span style="font-size:10.5px;font-weight:600;color:#875F0E">2</span>Accord 2024</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding:12px 12px 24px;background:#F8F7F4">
+    <div style="display:flex;gap:8px;overflow:hidden;padding:0 4px 10px">
+      <button class="chip" style="color:#4F4D52">Rédiger une note à l'équipe</button>
+      <button class="chip" style="color:#4F4D52">Les dates clés</button>
+    </div>
+    <div style="display:flex;align-items:flex-end;gap:6px;background:#FFFFFF;border:1px solid #E0DCD3;border-radius:22px;padding:4px 4px 4px 8px;box-shadow:0 1px 2px rgba(25,24,28,.04),0 10px 28px rgba(25,24,28,.05)">
+      <button class="ib" aria-label="Ajouter une source" style="width:40px;height:40px"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg></button>
+      <label for="q" class="sr">Votre message</label>
+      <textarea id="q" rows="1" placeholder="Répondre à Lumia…" style="flex:1;border:0;outline:0;resize:none;background:transparent;font-size:16px;line-height:1.4;color:#19181C;padding:10px 4px;box-sizing:border-box;display:block;min-width:0"></textarea>
+      <button class="ib" aria-label="Dicter" style="width:40px;height:40px"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></button>
+      <button aria-label="Envoyer" style="width:40px;height:40px;border-radius:50%;background:#19181C;color:#F8F7F4;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"></path></svg></button>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

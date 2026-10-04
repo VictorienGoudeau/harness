@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Lumia — Travaux</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap">
+<style>
+body{margin:0;background:#F8F7F4;color:#19181C;font-family:'Instrument Sans',system-ui,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:#875F0E;text-decoration:none}a:hover{color:#5E4209}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none;padding:0}
+input::placeholder{color:#8A8782}
+.srf{font-family:'Newsreader',Georgia,serif;font-weight:400;letter-spacing:-0.01em}
+.cap{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#6E6B6A;font-weight:500}
+.rail{width:64px;background:#E8E5DE;border-right:1px solid #E0DCD3;display:flex;flex-direction:column;align-items:center;padding:16px 0;gap:4px;box-sizing:border-box}
+.rl{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#4F4D52}
+.rl:hover{background:#DEDAD1;color:#19181C}
+.rl.on{background:#19181C;color:#F8F7F4}
+.main{flex:999 1 560px;min-width:0;display:flex;flex-direction:column;min-height:100vh}
+.ib{width:32px;height:32px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;color:#4F4D52}
+.ib:hover{background:#ECE9E2;color:#19181C}
+.btn{display:inline-flex;align-items:center;gap:8px;height:32px;padding:0 12px;border-radius:9px;font-weight:500;font-size:13px}
+.btn-ink{background:#19181C;color:#F8F7F4}
+.chip{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 12px;border-radius:999px;border:1px solid #E0DCD3;font-size:12.5px;color:#4F4D52;background:#FFFFFF}
+.chip.on{border-color:#19181C;color:#19181C}
+.tr{display:grid;grid-template-columns:minmax(0,2.4fr) minmax(0,1fr) minmax(0,1.1fr) minmax(0,.9fr) minmax(0,.7fr);gap:16px;align-items:center;padding:14px 12px;border-top:1px solid #E0DCD3;font-size:13.5px;color:#19181C;border-radius:0}
+.tr:hover{background:#F1EFEA}
+.tr.h{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#6E6B6A;font-weight:500;border-top:0;padding-top:0;padding-bottom:10px}
+.tr.h:hover{background:transparent}
+.tr .m{font-size:12.5px;color:#6E6B6A}
+.st{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:#4F4D52;white-space:nowrap}
+.kpi{display:flex;flex-direction:column;gap:4px;padding:0 24px;border-left:1px solid #E0DCD3}
+.kpi:first-child{border-left:0;padding-left:0}
+.kpi .v{font-family:'Newsreader',Georgia,serif;font-size:34px;line-height:1;letter-spacing:-0.02em}
+.kpi .l{font-size:12.5px;color:#6E6B6A}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</helmet>
+<div style="display:flex;flex-wrap:wrap;min-height:100vh;background:#F8F7F4">
+
+<nav class="rail" aria-label="Navigation principale">
+  <a href="Main.dc.html" aria-label="Lumia" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+    <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="12" cy="14" r="7" fill="#C8961E"></circle><circle cx="14" cy="12" r="11" stroke="#19181C" stroke-width="1"></circle></svg>
+  </a>
+  <a class="rl" href="Main.dc.html" aria-label="Accueil"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg></a>
+  <a class="rl" href="Conversation.dc.html" aria-label="Conversations"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 15a2 2 0 0 1-2 2H9l-5 4V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"></path></svg></a>
+  <a class="rl on" href="Travaux.dc.html" aria-label="Travaux"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11"></path><path d="M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"></path></svg></a>
+  <a class="rl" href="Espaces.dc.html" aria-label="Espaces"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"></rect><rect x="13" y="4" width="7" height="7" rx="1.5"></rect><rect x="4" y="13" width="7" height="7" rx="1.5"></rect><rect x="13" y="13" width="7" height="7" rx="1.5"></rect></svg></a>
+  <div style="flex:1"></div>
+  <a class="rl" href="Reglages.dc.html" aria-label="Réglages"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h8M18 7h2M4 17h4M12 17h8"></path><circle cx="15" cy="7" r="2.5"></circle><circle cx="9" cy="17" r="2.5"></circle></svg></a>
+  <button aria-label="Compte de Camille Roux" style="width:32px;height:32px;border-radius:50%;background:#19181C;color:#F8F7F4;font-size:11.5px;font-weight:600;letter-spacing:0.04em;display:flex;align-items:center;justify-content:center;margin-top:8px">CR</button>
+</nav>
+
+<main class="main">
+  <header style="height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 20px 0 32px;box-sizing:border-box;border-bottom:1px solid #E0DCD3;gap:16px;flex-wrap:wrap">
+    <span class="cap" style="color:#19181C">Travaux</span>
+    <button class="btn btn-ink"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg>Confier un travail</button>
+  </header>
+
+  <div style="flex:1;padding:44px 48px 48px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center">
+    <div style="width:100%;max-width:1120px;display:flex;flex-direction:column">
+
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:32px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <h1 class="srf" style="margin:0;font-size:36px;line-height:1.1;font-weight:400">Vos travaux</h1>
+          <p style="margin:0;font-size:15px;color:#4F4D52">Ce que Lumia mène pour vous, et où elle attend votre avis.</p>
+        </div>
+        <div style="display:flex">
+          <div class="kpi"><span class="v">3</span><span class="l">en cours</span></div>
+          <div class="kpi"><span class="v" style="color:#875F0E">2</span><span class="l">attendent votre accord</span></div>
+          <div class="kpi"><span class="v">14</span><span class="l">terminés cette semaine</span></div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:36px;flex-wrap:wrap">
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button class="chip on">Tous</button>
+          <button class="chip"><span style="width:7px;height:7px;border-radius:50%;background:#C8961E"></span>En cours</button>
+          <button class="chip"><span style="width:7px;height:7px;border-radius:50%;border:1.5px solid #C8961E;box-sizing:border-box"></span>En attente</button>
+          <button class="chip">Terminés</button>
+          <button class="chip">Programmés</button>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button class="chip">Tous les espaces<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></button>
+          <label for="fs" class="sr">Rechercher un travail</label>
+          <div style="display:flex;align-items:center;gap:8px;height:30px;padding:0 10px;border:1px solid #E0DCD3;border-radius:999px;background:#FFFFFF;color:#6E6B6A;width:220px;box-sizing:border-box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"></circle><path d="M20 20l-4.5-4.5"></path></svg><input id="fs" type="search" placeholder="Rechercher" style="border:0;outline:0;background:transparent;flex:1;font-size:12.5px;color:#19181C;min-width:0"></div>
+        </div>
+      </div>
+
+      <div style="margin-top:20px;overflow-x:auto">
+        <div style="min-width:860px">
+          <div class="tr h"><span>Travail</span><span>Espace</span><span>État</span><span>Livrables</span><span>Mis à jour</span></div>
+
+          <a class="tr" href="Travail.dc.html"><span style="min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Analyser le contrat cadre et préparer une note de risques</span><span class="m">Direction Juridique</span><span class="st"><span style="width:7px;height:7px;border-radius:50%;background:#C8961E"></span>En cours · 3 / 5</span><span class="m">1 prêt, 1 à venir</span><span class="m">il y a 2 min</span></a>
+          <a class="tr" href="Travail.dc.html" style="background:#FBF7EC"><span style="min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Consolider les retours clients du troisième trimestre</span><span class="m">Marketing Q4</span><span class="st" style="color:#875F0E"><span style="width:7px;height:7px;border-radius:50%;border:1.5px solid #C8961E;box-sizing:border-box"></span>Attend votre accord</span><span class="m">2 prêts</span><span class="m">il y a 25 min</span></a>
+          <a class="tr" href="Travail.dc.html" style="background:#FBF7EC"><span style="min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Relancer les fournisseurs sans réponse à l'appel d'offres</span><span class="m">Achats</span><span class="st" style="color:#875F0E"><span style="width:7px;height:7px;border-radius:50%;border:1.5px solid #C8961E;box-sizing:border-box"></span>Attend votre accord · envoi</span><span class="m">3 brouillons</span><span class="m">il y a 1 h</span></a>
+          <a class="tr" href="Travail.dc.html"><span style="min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Veille hebdomadaire — réglementation numérique</span><span class="m">Direction Juridique</span><span class="st"><span style="width:7px;height:7px;border-radius:50%;background:#C8961E"></span>En cours · 1 / 3</span><span class="m">—</span><span class="m">il y a 1 h</span></a>
+          <a class="tr" href="Travail.dc.html"><span style="min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Préparer l'ordre du jour et le dossier du comité du 9 octobre</span><span class="m">Comité de direction</span><span class="st"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6E6B6A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg>Programmé · lundi 8:00</span><span class="m">—</span><span class="m">hier</span></a>
+          <a class="tr" href="Travail.dc.html"><span style="min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Préparer le dossier d'accueil des trois arrivées de novembre</span><span class="m">RH &amp; Talents</span><span class="st"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2E6B4E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg>Terminé</span><span class="m">2 livrables</span><span class="m">il y a 1 h</span></a>
+          <a class="tr" href="Travail.dc.html"><span style="min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Traduire la présentation partenaires en anglais</span><span class="m">Marketing Q4</span><span class="st"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2E6B4E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg>Terminé</span><span class="m">1 livrable</span><span class="m">hier</span></a>
+          <a class="tr" href="Travail.dc.html"><span style="min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Répondre aux questions fréquentes du séminaire</span><span class="m">Entreprise</span><span class="st"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2E6B4E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg>Terminé</span><span class="m">1 livrable</span><span class="m">mardi</span></a>
+          <a class="tr" href="Travail.dc.html" style="border-bottom:1px solid #E0DCD3"><span style="min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Vérifier les mentions obligatoires du nouveau site carrières</span><span class="m">RH &amp; Talents</span><span class="st"><span style="width:7px;height:7px;border-radius:50%;background:#A4382A"></span>Interrompu par vous</span><span class="m">—</span><span class="m">lundi</span></a>
+        </div>
+      </div>
+
+      <p style="margin:20px 0 0;font-size:12.5px;color:#8A8782">Les travaux terminés depuis plus de 90 jours sont archivés avec leurs livrables dans l'espace concerné.</p>
+    </div>
+  </div>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1000}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

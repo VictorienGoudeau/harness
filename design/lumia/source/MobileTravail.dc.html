@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Lumia mobile — Travail</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap">
+<style>
+body{margin:0;background:#F8F7F4;color:#19181C;font-family:'Instrument Sans',system-ui,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:#875F0E;text-decoration:none}a:hover{color:#5E4209}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none;padding:0}
+.srf{font-family:'Newsreader',Georgia,serif;font-weight:400;letter-spacing:-0.01em}
+.cap{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#6E6B6A;font-weight:500}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 14px;border-radius:11px;font-weight:500;font-size:14px}
+.btn-ink{background:#19181C;color:#F8F7F4}
+.btn-out{border:1px solid #CFCBC2;color:#19181C}
+.btn-ghost{color:#4F4D52}
+.stp{display:grid;grid-template-columns:26px minmax(0,1fr);gap:0 12px;padding:14px 0;border-top:1px solid #E0DCD3;align-items:start}
+.stp .t{font-size:15px;color:#19181C;line-height:1.35}
+.stp .d{font-size:12.5px;color:#6E6B6A;margin-top:2px}
+.act{display:flex;align-items:flex-start;gap:8px;font-size:12.5px;color:#4F4D52;padding:6px 0;line-height:1.4}
+.ib{width:44px;height:44px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;color:#4F4D52}
+@keyframes lum{0%,100%{box-shadow:0 0 0 0 rgba(200,150,30,.45)}50%{box-shadow:0 0 0 7px rgba(200,150,30,0)}}
+.live{animation:lum 2.4s ease-out infinite}
+</style>
+</helmet>
+<div style="width:390px;height:844px;box-sizing:border-box;background:#F8F7F4;display:flex;flex-direction:column;overflow:hidden">
+
+  <header style="display:flex;align-items:center;gap:6px;padding:54px 12px 10px;border-bottom:1px solid #E0DCD3">
+    <a href="MobileAccueil.dc.html" aria-label="Retour" class="ib"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></a>
+    <div style="flex:1;min-width:0;display:flex;flex-direction:column">
+      <span class="cap" style="color:#875F0E">Direction Juridique</span>
+      <span class="cap" style="color:#19181C">Travail</span>
+    </div>
+    <button class="ib" aria-label="Mettre en pause" style="color:#875F0E"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5v14M15 5v14"></path></svg></button>
+  </header>
+
+  <div style="flex:1;overflow:hidden;padding:24px 20px 0;display:flex;flex-direction:column">
+    <div style="display:flex;align-items:center;gap:10px;font-size:12.5px;color:#4F4D52">
+      <span class="live" style="width:8px;height:8px;border-radius:50%;background:#C8961E;display:inline-block"></span>En cours · étape 3 sur 5 · 12 min
+    </div>
+    <h1 class="srf" style="margin:8px 0 0;font-size:26px;line-height:1.15;font-weight:400">Analyser le contrat cadre et préparer une note de risques</h1>
+    <div style="height:2px;background:#E0DCD3;border-radius:2px;margin-top:18px;overflow:hidden"><div style="width:58%;height:100%;background:#C8961E"></div></div>
+
+    <div style="margin-top:22px">
+      <div class="stp">
+        <span style="width:26px;height:26px;border-radius:50%;background:#19181C;color:#F8F7F4;display:inline-flex;align-items:center;justify-content:center"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg></span>
+        <div><div class="t">Lire le contrat cadre reçu</div><div class="d">42 pages · 2 min</div></div>
+      </div>
+      <div class="stp">
+        <span style="width:26px;height:26px;border-radius:50%;background:#19181C;color:#F8F7F4;display:inline-flex;align-items:center;justify-content:center"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg></span>
+        <div><div class="t">Comparer au modèle de l'espace</div><div class="d">17 écarts relevés</div></div>
+      </div>
+      <div class="stp" style="background:linear-gradient(to right,rgba(246,238,220,.7),rgba(246,238,220,0));margin:0 -12px;padding-left:12px;padding-right:12px;border-radius:12px;border-top-color:transparent">
+        <span style="width:26px;height:26px;border-radius:50%;border:1.5px solid #C8961E;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;background:#FFFFFF"><span class="live" style="width:7px;height:7px;border-radius:50%;background:#C8961E;display:inline-block"></span></span>
+        <div>
+          <div class="t">Qualifier les clauses à risque</div>
+          <div style="margin-top:8px;display:flex;flex-direction:column">
+            <div class="act"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2E6B4E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M5 12l5 5 9-10"></path></svg>Clause 12 — plafond de responsabilité à 50 %</div>
+            <div class="act"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2E6B4E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px"><path d="M5 12l5 5 9-10"></path></svg>Clause 18 — préavis porté à six mois</div>
+            <div class="act" style="color:#19181C"><span style="width:13px;height:13px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:3px"><span style="width:6px;height:6px;border-radius:50%;background:#C8961E"></span></span>Recherche dans Jurisprudence interne</div>
+          </div>
+        </div>
+      </div>
+      <div class="stp">
+        <span style="width:26px;height:26px;border-radius:50%;border:1.5px solid #CFCBC2;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:#6E6B6A">4</span>
+        <div><div class="t" style="color:#4F4D52">Rédiger la note de risques</div></div>
+      </div>
+      <div class="stp" style="border-bottom:1px solid #E0DCD3">
+        <span style="width:26px;height:26px;border-radius:50%;border:1.5px solid #CFCBC2;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:#6E6B6A">5</span>
+        <div><div class="t" style="color:#4F4D52">Envoyer à Marie Laurent pour relecture</div><div class="d">Demandera votre accord</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding:14px 16px 28px;background:#F8F7F4;border-top:1px solid #E0DCD3">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><span style="width:8px;height:8px;border-radius:50%;border:1.5px solid #C8961E;box-sizing:border-box"></span><span class="cap" style="color:#875F0E">Lumia demande votre accord</span></div>
+    <p style="margin:0 0 14px;font-size:14.5px;line-height:1.5">Consulter le dossier <strong style="font-weight:500">Contentieux 2023 — [Fournisseur]</strong>, en accès restreint.</p>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <button class="btn btn-ink">Autoriser une fois</button>
+      <div style="display:flex;gap:8px"><button class="btn btn-out" style="flex:1">Toujours pour ce travail</button><button class="btn btn-ghost" style="flex:1">Refuser</button></div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

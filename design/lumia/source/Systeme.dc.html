@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Lumia — Système</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap">
+<style>
+body{margin:0;background:#F8F7F4;color:#19181C;font-family:'Instrument Sans',system-ui,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:#875F0E;text-decoration:none}a:hover{color:#5E4209}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none;padding:0}
+.srf{font-family:'Newsreader',Georgia,serif;font-weight:400;letter-spacing:-0.01em}
+.cap{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#6E6B6A;font-weight:500}
+.sw{display:flex;flex-direction:column;gap:8px}
+.sw .c{height:56px;border-radius:10px;border:1px solid rgba(25,24,28,.06)}
+.sw .n{font-size:12.5px;color:#19181C;font-weight:500}
+.sw .h{font-size:11.5px;color:#6E6B6A;font-variant-numeric:tabular-nums}
+.btn{display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 14px;border-radius:10px;font-weight:500;font-size:13px}
+.btn-ink{background:#19181C;color:#F8F7F4}
+.btn-out{border:1px solid #CFCBC2;color:#19181C}
+.btn-ghost{color:#4F4D52}
+.btn-lum{background:#F6EEDC;color:#875F0E}
+.chip{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 12px;border-radius:999px;border:1px solid #E0DCD3;font-size:12.5px;color:#4F4D52;background:#FFFFFF}
+.seg{height:28px;padding:0 12px;border-radius:999px;font-size:12.5px;font-weight:500;color:#6E6B6A}
+.seg.on{background:#FFFFFF;color:#19181C;box-shadow:0 1px 2px rgba(25,24,28,.08)}
+.sec{border-top:1px solid #E0DCD3;padding-top:20px;display:flex;flex-direction:column;gap:18px}
+.st{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:#4F4D52}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</helmet>
+<div style="width:1440px;height:1240px;box-sizing:border-box;padding:56px 64px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:40px;align-content:start;background:#F8F7F4">
+
+  <div style="grid-column:span 7;display:flex;flex-direction:column;gap:20px">
+    <div style="display:flex;align-items:center;gap:18px">
+      <svg width="64" height="64" viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="12" cy="14" r="7" fill="#C8961E"></circle><circle cx="14" cy="12" r="11" stroke="#19181C" stroke-width="0.6"></circle></svg>
+      <span class="srf" style="font-size:88px;line-height:1;letter-spacing:-0.03em">Lumia</span>
+    </div>
+    <p style="margin:0;max-width:560px;font-size:15px;color:#4F4D52">Assistant de travail de l'entreprise. Direction « éditoriale lumineuse » : un fond papier chaud, une encre profonde, un seul accent ambré réservé à ce qui est vivant (une tâche en cours, une source, une marque). Des filets fins plutôt que des cartes ; des marges généreuses plutôt que des bordures.</p>
+  </div>
+
+  <div style="grid-column:span 5;display:flex;flex-direction:column;gap:12px;justify-content:flex-end">
+    <span class="cap">La marque</span>
+    <p style="margin:0;font-size:13.5px;color:#4F4D52">Un disque ambré et un anneau d'encre décalé : une lumière et son halo. Le disque est la seule forme pleine de couleur de l'interface ; il indique Lumia quand elle parle, cherche ou travaille.</p>
+    <div style="display:flex;align-items:center;gap:24px;margin-top:4px">
+      <svg width="40" height="40" viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="12" cy="14" r="7" fill="#C8961E"></circle><circle cx="14" cy="12" r="11" stroke="#19181C" stroke-width="0.8"></circle></svg>
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="12" cy="14" r="7" fill="#C8961E"></circle><circle cx="14" cy="12" r="11" stroke="#19181C" stroke-width="1"></circle></svg>
+      <svg width="16" height="16" viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="12" cy="14" r="7" fill="#C8961E"></circle><circle cx="14" cy="12" r="11" stroke="#19181C" stroke-width="1.4"></circle></svg>
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;background:#19181C"><svg width="22" height="22" viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="12" cy="14" r="7" fill="#E2B043"></circle><circle cx="14" cy="12" r="11" stroke="#F8F7F4" stroke-width="1"></circle></svg></span>
+    </div>
+  </div>
+
+  <section class="sec" style="grid-column:span 12">
+    <span class="cap">Couleurs</span>
+    <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px">
+      <div class="sw"><div class="c" style="background:#F8F7F4"></div><span class="n">Papier</span><span class="h">#F8F7F4 · fond</span></div>
+      <div class="sw"><div class="c" style="background:#F1EFEA"></div><span class="n">Lin</span><span class="h">#F1EFEA · panneaux</span></div>
+      <div class="sw"><div class="c" style="background:#E8E5DE"></div><span class="n">Lin foncé</span><span class="h">#E8E5DE · rail</span></div>
+      <div class="sw"><div class="c" style="background:#E0DCD3"></div><span class="n">Trait</span><span class="h">#E0DCD3 · filets</span></div>
+      <div class="sw"><div class="c" style="background:#19181C"></div><span class="n">Encre</span><span class="h">#19181C · texte, actions</span></div>
+      <div class="sw"><div class="c" style="background:#4F4D52"></div><span class="n">Encre II</span><span class="h">#4F4D52 · secondaire</span></div>
+      <div class="sw"><div class="c" style="background:#6E6B6A"></div><span class="n">Encre III</span><span class="h">#6E6B6A · légendes</span></div>
+      <div class="sw"><div class="c" style="background:#C8961E"></div><span class="n">Lumen</span><span class="h">#C8961E · marque, en cours</span></div>
+      <div class="sw"><div class="c" style="background:#875F0E"></div><span class="n">Lumen profond</span><span class="h">#875F0E · liens, texte</span></div>
+      <div class="sw"><div class="c" style="background:#F6EEDC"></div><span class="n">Halo</span><span class="h">#F6EEDC · teinte douce</span></div>
+      <div class="sw"><div class="c" style="background:#2E6B4E"></div><span class="n">Mousse</span><span class="h">#2E6B4E · terminé</span></div>
+      <div class="sw"><div class="c" style="background:#A4382A"></div><span class="n">Brique</span><span class="h">#A4382A · erreur, refus</span></div>
+    </div>
+  </section>
+
+  <section class="sec" style="grid-column:span 7">
+    <span class="cap">Typographie</span>
+    <div style="display:flex;flex-direction:column;gap:22px">
+      <div style="display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:baseline">
+        <span class="h" style="font-size:11.5px;color:#6E6B6A">Newsreader 44 · titre</span>
+        <span class="srf" style="font-size:44px;line-height:1.1">Bonsoir, Camille.</span>
+      </div>
+      <div style="display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:baseline">
+        <span class="h" style="font-size:11.5px;color:#6E6B6A">Newsreader 28 · section</span>
+        <span class="srf" style="font-size:28px;line-height:1.2">Analyser le contrat cadre et préparer une note de risques</span>
+      </div>
+      <div style="display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:baseline">
+        <span class="h" style="font-size:11.5px;color:#6E6B6A">Newsreader 20 italique · voix</span>
+        <span class="srf" style="font-size:20px;font-style:italic;color:#4F4D52">« Voici ce qui change par rapport à 2024. »</span>
+      </div>
+      <div style="display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:baseline">
+        <span class="h" style="font-size:11.5px;color:#6E6B6A">Instrument Sans 15 · lecture</span>
+        <span style="font-size:15px;line-height:1.6;max-width:560px">Le télétravail passe de deux à trois jours par semaine pour les fonctions éligibles, avec une journée commune fixée par chaque équipe.</span>
+      </div>
+      <div style="display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:baseline">
+        <span class="h" style="font-size:11.5px;color:#6E6B6A">Instrument Sans 13 · interface</span>
+        <span style="font-size:13px;font-weight:500">Autoriser une fois · Toujours pour cet espace · Refuser</span>
+      </div>
+      <div style="display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:baseline">
+        <span class="h" style="font-size:11.5px;color:#6E6B6A">Capitales 11 · étiquettes</span>
+        <span class="cap">Direction Juridique · Sources · En cours</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="grid-column:span 5">
+    <span class="cap">Principes</span>
+    <ol style="margin:0;padding:0 0 0 18px;display:flex;flex-direction:column;gap:12px;font-size:13.5px;color:#4F4D52">
+      <li><strong style="color:#19181C;font-weight:500">Une seule couleur vive.</strong> L'ambre signale ce qui est en train de se passer. Tout le reste est encre et papier.</li>
+      <li><strong style="color:#19181C;font-weight:500">Des filets, pas des boîtes.</strong> Les listes sont séparées par des traits d'un pixel ; la carte est réservée au composeur et aux livrables.</li>
+      <li><strong style="color:#19181C;font-weight:500">La marge parle.</strong> Le locuteur, l'heure, l'état sont dans la marge gauche, comme dans un script.</li>
+      <li><strong style="color:#19181C;font-weight:500">Rayons modérés.</strong> 10 px pour les contrôles, 14–16 px pour les cartes, pleins pour les pastilles.</li>
+      <li><strong style="color:#19181C;font-weight:500">Icônes au trait.</strong> 18 px, trait de 1,5, jamais de pictogramme plein ni d'émoji.</li>
+    </ol>
+  </section>
+
+  <section class="sec" style="grid-column:span 12">
+    <span class="cap">Composants</span>
+    <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:28px">
+
+      <div style="grid-column:span 4;display:flex;flex-direction:column;gap:12px">
+        <span class="h" style="font-size:11.5px;color:#6E6B6A">Boutons</span>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn btn-ink">Autoriser une fois</button>
+          <button class="btn btn-out">Toujours pour cet espace</button>
+          <button class="btn btn-ghost">Refuser</button>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+          <button class="btn btn-lum"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5v14M15 5v14"></path></svg>Mettre en pause</button>
+          <button aria-label="Envoyer" style="width:36px;height:36px;border-radius:50%;background:#19181C;color:#F8F7F4;display:inline-flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"></path></svg></button>
+          <span style="width:32px;height:32px;border-radius:50%;background:#19181C;color:#F8F7F4;font-size:11.5px;font-weight:600;display:inline-flex;align-items:center;justify-content:center">CR</span>
+          <span style="width:32px;height:32px;border-radius:50%;background:#E8E5DE;color:#19181C;font-size:11.5px;font-weight:600;display:inline-flex;align-items:center;justify-content:center">ML</span>
+        </div>
+      </div>
+
+      <div style="grid-column:span 4;display:flex;flex-direction:column;gap:12px">
+        <span class="h" style="font-size:11.5px;color:#6E6B6A">Pastilles, modes, états</span>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+          <div role="group" aria-label="Mode" style="display:inline-flex;background:#F1EFEA;border-radius:999px;padding:3px;gap:2px"><button class="seg on">Conversation</button><button class="seg">Travail</button></div>
+          <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8z"></path><path d="M14 3v5h5"></path></svg>Politique télétravail 2025.pdf</span>
+        </div>
+        <div style="display:flex;gap:18px;flex-wrap:wrap">
+          <span class="st"><span style="width:8px;height:8px;border-radius:50%;background:#C8961E"></span>En cours</span>
+          <span class="st"><span style="width:8px;height:8px;border-radius:50%;border:1.5px solid #C8961E;box-sizing:border-box"></span>En attente d'accord</span>
+          <span class="st"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2E6B4E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg>Terminé</span>
+          <span class="st"><span style="width:8px;height:8px;border-radius:50%;background:#A4382A"></span>Interrompu</span>
+          <span class="st"><span style="width:8px;height:8px;border-radius:50%;border:1.5px solid #CFCBC2;box-sizing:border-box"></span>À venir</span>
+        </div>
+      </div>
+
+      <div style="grid-column:span 4;display:flex;flex-direction:column;gap:12px">
+        <span class="h" style="font-size:11.5px;color:#6E6B6A">Champs</span>
+        <label for="f1" class="sr">Rechercher</label>
+        <div style="display:flex;align-items:center;gap:8px;height:36px;padding:0 12px;border:1px solid #E0DCD3;border-radius:10px;background:#FFFFFF;color:#6E6B6A"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"></circle><path d="M20 20l-4.5-4.5"></path></svg><input id="f1" type="search" placeholder="Rechercher dans Lumia" style="border:0;outline:0;background:transparent;flex:1;font-size:13px;color:#19181C"></div>
+        <label for="f2" class="sr">Champ actif</label>
+        <div style="display:flex;align-items:center;gap:8px;height:36px;padding:0 12px;border:1px solid #19181C;border-radius:10px;background:#FFFFFF;box-shadow:0 0 0 3px #F6EEDC"><input id="f2" type="text" value="Direction Juridique" style="border:0;outline:0;background:transparent;flex:1;font-size:13px;color:#19181C"></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px">
+          <span>Demander avant d'envoyer un e-mail</span>
+          <button role="switch" aria-checked="true" aria-label="Demander avant d'envoyer un e-mail" style="width:38px;height:22px;border-radius:999px;background:#19181C;position:relative"><span style="position:absolute;top:3px;left:19px;width:16px;height:16px;border-radius:50%;background:#F8F7F4"></span></button>
+        </div>
+      </div>
+
+      <div style="grid-column:span 7;display:flex;flex-direction:column;gap:12px">
+        <span class="h" style="font-size:11.5px;color:#6E6B6A">Transcription — le locuteur dans la marge</span>
+        <div style="display:grid;grid-template-columns:112px 1fr;gap:10px 20px;font-size:15px;line-height:1.6">
+          <div style="padding-top:3px"><span class="cap" style="color:#4F4D52">Vous</span><div style="font-size:11.5px;color:#8A8782;margin-top:2px">14:02</div></div>
+          <p style="margin:0">Peux-tu me résumer la politique de télétravail mise à jour ?</p>
+          <div style="padding-top:3px;display:flex;flex-direction:column;gap:2px"><span style="display:inline-flex;align-items:center;gap:6px"><svg width="12" height="12" viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="12" cy="14" r="7" fill="#C8961E"></circle><circle cx="14" cy="12" r="11" stroke="#19181C" stroke-width="1.6"></circle></svg><span class="cap" style="color:#19181C">Lumia</span></span><span style="font-size:11.5px;color:#8A8782">14:02 · 2 sources</span></div>
+          <p style="margin:0">Le télétravail passe de deux à trois jours par semaine pour les fonctions éligibles. <a href="#s1" style="font-size:11px;vertical-align:super;font-weight:600">1</a></p>
+        </div>
+      </div>
+
+      <div style="grid-column:span 5;display:flex;flex-direction:column;gap:12px">
+        <span class="h" style="font-size:11.5px;color:#6E6B6A">Demande d'accord</span>
+        <div style="border:1px solid #E0DCD3;border-radius:14px;background:#FFFFFF;padding:16px 18px;display:flex;flex-direction:column;gap:12px">
+          <div style="display:flex;align-items:center;gap:10px"><span style="width:8px;height:8px;border-radius:50%;border:1.5px solid #C8961E;box-sizing:border-box"></span><span class="cap" style="color:#875F0E">Lumia demande votre accord</span></div>
+          <p style="margin:0;font-size:14px">Envoyer la note de risques à <strong style="font-weight:500">juridique@[entreprise]</strong> pour relecture.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn btn-ink" style="height:32px">Autoriser une fois</button><button class="btn btn-out" style="height:32px">Toujours pour cet espace</button><button class="btn btn-ghost" style="height:32px">Refuser</button></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1240}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

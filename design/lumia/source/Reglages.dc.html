@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Lumia — Réglages</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap">
+<style>
+body{margin:0;background:#F8F7F4;color:#19181C;font-family:'Instrument Sans',system-ui,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:#875F0E;text-decoration:none}a:hover{color:#5E4209}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none;padding:0}
+.srf{font-family:'Newsreader',Georgia,serif;font-weight:400;letter-spacing:-0.01em}
+.cap{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#6E6B6A;font-weight:500}
+.rail{width:64px;background:#E8E5DE;border-right:1px solid #E0DCD3;display:flex;flex-direction:column;align-items:center;padding:16px 0;gap:4px;box-sizing:border-box}
+.rl{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#4F4D52}
+.rl:hover{background:#DEDAD1;color:#19181C}
+.rl.on{background:#19181C;color:#F8F7F4}
+.pan{width:264px;background:#F1EFEA;border-right:1px solid #E0DCD3;box-sizing:border-box;display:flex;flex-direction:column;padding:16px 12px;gap:2px}
+.main{flex:999 1 560px;min-width:0;display:flex;flex-direction:column;min-height:100vh}
+.li{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:10px;color:#19181C;font-size:13.5px}
+.li:hover{background:#E9E6DF;color:#19181C}
+.li.on{background:#E2DFD7}
+.btn{display:inline-flex;align-items:center;gap:8px;height:32px;padding:0 12px;border-radius:9px;font-weight:500;font-size:13px;white-space:nowrap}
+.btn-ink{background:#19181C;color:#F8F7F4}
+.btn-out{border:1px solid #CFCBC2;color:#19181C}
+.btn-ghost{color:#4F4D52}
+.con{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:16px;align-items:center;padding:16px 0;border-top:1px solid #E0DCD3}
+.con:last-child{border-bottom:1px solid #E0DCD3}
+.con .ic{width:40px;height:40px;border-radius:10px;background:#F1EFEA;color:#4F4D52;display:inline-flex;align-items:center;justify-content:center}
+.con .n{font-size:14.5px;font-weight:500}
+.con .d{font-size:12.5px;color:#6E6B6A;margin-top:2px}
+.ok{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:#2E6B4E;font-weight:500}
+.opt{display:grid;grid-template-columns:20px minmax(0,1fr);gap:14px;padding:14px 0;border-top:1px solid #E0DCD3;align-items:start}
+.opt:last-child{border-bottom:1px solid #E0DCD3}
+.rad{width:18px;height:18px;border-radius:50%;border:1.5px solid #CFCBC2;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;margin-top:2px;background:#FFFFFF}
+.rad.on{border-color:#19181C}
+.rad.on::after{content:"";width:8px;height:8px;border-radius:50%;background:#19181C}
+.sw{width:38px;height:22px;border-radius:999px;position:relative;flex-shrink:0}
+.sw span{position:absolute;top:3px;width:16px;height:16px;border-radius:50%;background:#F8F7F4}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</helmet>
+<div style="display:flex;flex-wrap:wrap;min-height:100vh;background:#F8F7F4">
+
+<nav class="rail" aria-label="Navigation principale">
+  <a href="Main.dc.html" aria-label="Lumia" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+    <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="12" cy="14" r="7" fill="#C8961E"></circle><circle cx="14" cy="12" r="11" stroke="#19181C" stroke-width="1"></circle></svg>
+  </a>
+  <a class="rl" href="Main.dc.html" aria-label="Accueil"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg></a>
+  <a class="rl" href="Conversation.dc.html" aria-label="Conversations"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 15a2 2 0 0 1-2 2H9l-5 4V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"></path></svg></a>
+  <a class="rl" href="Travaux.dc.html" aria-label="Travaux"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11"></path><path d="M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"></path></svg></a>
+  <a class="rl" href="Espaces.dc.html" aria-label="Espaces"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"></rect><rect x="13" y="4" width="7" height="7" rx="1.5"></rect><rect x="4" y="13" width="7" height="7" rx="1.5"></rect><rect x="13" y="13" width="7" height="7" rx="1.5"></rect></svg></a>
+  <div style="flex:1"></div>
+  <a class="rl on" href="Reglages.dc.html" aria-label="Réglages"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h8M18 7h2M4 17h4M12 17h8"></path><circle cx="15" cy="7" r="2.5"></circle><circle cx="9" cy="17" r="2.5"></circle></svg></a>
+  <button aria-label="Compte de Camille Roux" style="width:32px;height:32px;border-radius:50%;background:#19181C;color:#F8F7F4;font-size:11.5px;font-weight:600;letter-spacing:0.04em;display:flex;align-items:center;justify-content:center;margin-top:8px">CR</button>
+</nav>
+
+<aside class="pan" aria-label="Réglages">
+  <div style="padding:0 12px 10px"><span class="srf" style="font-size:20px">Réglages</span></div>
+  <div class="cap" style="padding:10px 12px 6px">Vous</div>
+  <a class="li" href="#profil">Profil</a>
+  <a class="li" href="#apparence">Apparence</a>
+  <a class="li" href="#memoire">Mémoire</a>
+  <a class="li" href="#notifications">Notifications</a>
+  <div class="cap" style="padding:18px 12px 6px">Lumia</div>
+  <a class="li on" href="#connecteurs">Connecteurs</a>
+  <a class="li" href="#autorisations">Autorisations</a>
+  <a class="li" href="#modeles">Qualité des réponses</a>
+  <div class="cap" style="padding:18px 12px 6px">Entreprise</div>
+  <a class="li" href="#admin">Administration</a>
+  <a class="li" href="#journal">Journal d'activité</a>
+  <a class="li" href="#charte">Charte d'usage</a>
+</aside>
+
+<main class="main">
+  <header style="height:56px;display:flex;align-items:center;padding:0 32px;box-sizing:border-box;border-bottom:1px solid #E0DCD3;gap:10px">
+    <span class="cap" style="color:#875F0E">Réglages</span><span style="color:#CFCBC2">/</span><span class="cap" style="color:#19181C">Connecteurs et autorisations</span>
+  </header>
+
+  <div style="flex:1;padding:44px 48px 48px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center">
+    <div style="width:100%;max-width:800px;display:flex;flex-direction:column;gap:56px">
+
+      <section id="connecteurs">
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:14px">
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <h1 class="srf" style="margin:0;font-size:32px;line-height:1.1;font-weight:400">Connecteurs</h1>
+            <p style="margin:0;font-size:14.5px;color:#4F4D52;max-width:520px">Ce à quoi Lumia peut accéder en votre nom. Chaque connecteur respecte vos droits existants : Lumia ne voit jamais plus que vous.</p>
+          </div>
+          <button class="btn btn-out"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg>Ajouter</button>
+        </div>
+
+        <div class="con">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg></span>
+          <div><div class="n">Messagerie et agenda</div><div class="d">Lire vos e-mails et votre agenda · préparer des brouillons · 2 boîtes partagées</div></div>
+          <div style="display:flex;align-items:center;gap:14px"><span class="ok"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg>Connecté</span><button class="btn btn-ghost">Gérer</button></div>
+        </div>
+        <div class="con">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8z"></path><path d="M14 3v5h5"></path></svg></span>
+          <div><div class="n">Documents partagés</div><div class="d">Lire et rechercher dans les dossiers d'équipe · créer des brouillons dans « Lumia / Brouillons »</div></div>
+          <div style="display:flex;align-items:center;gap:14px"><span class="ok"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg>Connecté</span><button class="btn btn-ghost">Gérer</button></div>
+        </div>
+        <div class="con">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 15a2 2 0 0 1-2 2H9l-5 4V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"></path></svg></span>
+          <div><div class="n">Messagerie d'équipe</div><div class="d">Lire les canaux où vous êtes membre · publier sur accord</div></div>
+          <div style="display:flex;align-items:center;gap:14px"><span class="ok"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg>Connecté</span><button class="btn btn-ghost">Gérer</button></div>
+        </div>
+        <div class="con">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"></path><path d="M4 19a2 2 0 0 1 2-2h13"></path></svg></span>
+          <div><div class="n">Base de connaissances</div><div class="d">Procédures, politiques et fiches internes · lecture seule</div></div>
+          <div style="display:flex;align-items:center;gap:14px"><span class="ok"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg>Connecté</span><button class="btn btn-ghost">Gérer</button></div>
+        </div>
+        <div class="con">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-5-6.3"></path></svg></span>
+          <div><div class="n">Relation client</div><div class="d">Comptes, opportunités et historique des échanges</div></div>
+          <div style="display:flex;align-items:center;gap:14px"><button class="btn btn-out">Connecter</button></div>
+        </div>
+        <div class="con">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path></svg></span>
+          <div><div class="n">Recherche sur le web</div><div class="d">Sources publiques, citées et datées · hors documents internes</div></div>
+          <div style="display:flex;align-items:center;gap:14px"><button class="sw" role="switch" aria-checked="true" aria-label="Recherche sur le web" style="background:#19181C"><span style="left:19px"></span></button></div>
+        </div>
+      </section>
+
+      <section id="autorisations">
+        <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:14px">
+          <h2 class="srf" style="margin:0;font-size:26px;line-height:1.15;font-weight:400">Avant d'agir, Lumia…</h2>
+          <p style="margin:0;font-size:14.5px;color:#4F4D52;max-width:520px">Règle par défaut pour les actions qui sortent de la lecture. Chaque espace peut la préciser, jamais l'assouplir.</p>
+        </div>
+        <div class="opt"><span class="rad on" aria-hidden="true"></span><label style="display:flex;flex-direction:column;gap:2px;cursor:pointer"><input type="radio" name="p" class="sr" checked>
+          <span style="font-size:14.5px;font-weight:500">Demande votre accord pour chaque action sensible</span><span style="font-size:13px;color:#6E6B6A">Envoyer, publier, partager hors de l'entreprise, accéder à un dossier restreint. Recommandé.</span></label></div>
+        <div class="opt"><span class="rad" aria-hidden="true"></span><label style="display:flex;flex-direction:column;gap:2px;cursor:pointer"><input type="radio" name="p" class="sr">
+          <span style="font-size:14.5px;font-weight:500">Agit dans l'espace, demande pour sortir</span><span style="font-size:13px;color:#6E6B6A">Libre à l'intérieur d'un espace dont vous êtes membre ; accord requis pour toute action vers l'extérieur.</span></label></div>
+        <div class="opt"><span class="rad" aria-hidden="true"></span><label style="display:flex;flex-direction:column;gap:2px;cursor:pointer"><input type="radio" name="p" class="sr">
+          <span style="font-size:14.5px;font-weight:500">Prépare tout, n'envoie jamais</span><span style="font-size:13px;color:#6E6B6A">Lumia produit des brouillons et s'arrête. Vous envoyez vous-même.</span></label></div>
+
+        <div style="display:flex;flex-direction:column;margin-top:36px">
+          <span class="cap" style="margin-bottom:6px">Toujours</span>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid #E0DCD3;font-size:14px"><span>Citer les sources utilisées</span><span style="font-size:12.5px;color:#6E6B6A">Imposé par l'entreprise</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid #E0DCD3;font-size:14px"><span>Journaliser les actions réalisées en votre nom</span><span style="font-size:12.5px;color:#6E6B6A">Imposé par l'entreprise</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid #E0DCD3;border-bottom:1px solid #E0DCD3;font-size:14px"><span>Me prévenir quand un travail se termine</span><button class="sw" role="switch" aria-checked="true" aria-label="Me prévenir quand un travail se termine" style="background:#19181C"><span style="left:19px"></span></button></div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1000}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
