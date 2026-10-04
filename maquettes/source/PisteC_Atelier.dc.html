@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Piste C — L’Atelier, accueil</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./lumia.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit}a:hover{color:inherit}
+</style>
+</helmet>
+<div class="lm {{themeClass}}" style="min-height: 100vh; display: flex; flex-direction: column; --mark-bg: var(--ground)">
+
+<header style="flex: none; height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 18px 0 20px; flex-wrap: wrap">
+<span style="display: flex; align-items: center; gap: 10px"><svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg><span style="font-size: 14px; font-weight: 600; letter-spacing: -.01em">Groupe Sérac</span></span>
+<nav class="topnav" aria-label="Navigation principale">
+<a class="on" href="PisteC_Atelier.dc.html" aria-current="page">Atelier</a>
+<a href="#">Projets</a>
+<a href="#">Bibliothèque</a>
+<a href="#">Automatisations</a>
+</nav>
+<span class="av av-ink">CA</span>
+</header>
+
+<main class="sheet" style="flex: none; margin: 0 8px 8px; height: calc(100vh - 64px); min-height: 640px; overflow-y: auto; --mark-bg: var(--sheet)">
+<div style="padding: 30px 32px 36px; display: flex; flex-direction: column; gap: 28px">
+
+<div class="composer" style="flex-direction: row; align-items: center; gap: 10px; padding: 8px 8px 8px 20px; max-width: 920px; width: 100%; margin: 0 auto; border-radius: 16px">
+<span style="flex: 1; font-size: 16px; color: var(--ink-3)">Que doit-on lancer aujourd’hui ?</span>
+<div class="seg" aria-hidden="true"><span class="btn btn-sm" style="height: 28px; color: var(--ink-3)">Chat</span><span class="btn btn-sm on" style="height: 28px">Work</span></div>
+<span class="btn btn-primary" style="height: 38px; border-radius: 10px">Lancer</span>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 16px; align-items: start">
+
+<section style="display: flex; flex-direction: column; gap: 10px" aria-labelledby="cadrer">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 0 4px"><h2 id="cadrer" class="eyebrow">À cadrer</h2><span class="count">2</span></div>
+<div class="wf wf-dash" style="padding: 14px; display: flex; flex-direction: column; gap: 10px">
+<span class="small strong">Revue budgétaire T4</span>
+<span class="xs muted">Lumia a besoin de deux précisions</span>
+<span class="btn btn-line btn-sm" style="align-self: flex-start">Répondre</span>
+</div>
+<div class="wf wf-dash" style="padding: 14px; display: flex; flex-direction: column; gap: 10px">
+<span class="small strong">Benchmark Europe du Sud</span>
+<span class="xs muted">Brouillon de consigne</span>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 10px" aria-labelledby="cours">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 0 4px"><h2 id="cours" class="eyebrow">En cours</h2><span class="count">3</span></div>
+<a class="wf" href="PisteC_Studio.dc.html" style="padding: 14px; display: flex; flex-direction: column; gap: 10px; box-shadow: var(--e2)">
+<span style="display: flex; align-items: center; gap: 8px"><svg class="mark mark-sm is-live" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg><span class="small strong">Dossier comité · Alder</span></span>
+<span class="progress is-live" style="width: 100%"><span style="width: 62%"></span></span>
+<span style="display: flex; justify-content: space-between"><span class="tag">Projet Alder</span><span class="xs muted">4 / 6</span></span>
+</a>
+<div class="wf" style="padding: 14px; display: flex; flex-direction: column; gap: 10px">
+<span style="display: flex; align-items: center; gap: 8px"><svg class="mark mark-sm is-live" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg><span class="small strong">Veille concurrentielle</span></span>
+<span class="progress is-live" style="width: 100%"><span style="width: 66%"></span></span>
+<span style="display: flex; justify-content: space-between"><span class="tag">Quotidienne</span><span class="xs muted">2 / 3</span></span>
+</div>
+<div class="wf" style="padding: 14px; display: flex; flex-direction: column; gap: 10px">
+<span style="display: flex; align-items: center; gap: 8px"><svg class="mark mark-sm is-live" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="8.25"></circle><g class="orbit"><circle class="bead" cx="17.83" cy="6.17" r="3.2"></circle></g></svg><span class="small strong">Contrats clients · Ardent</span></span>
+<span class="progress is-live" style="width: 100%"><span style="width: 20%"></span></span>
+<span style="display: flex; justify-content: space-between"><span class="tag">Commercial</span><span class="xs muted">1 / 5</span></span>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 10px" aria-labelledby="valider">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 0 4px"><h2 id="valider" class="eyebrow" style="color: var(--lumen-ink)">À valider</h2><span class="count" style="color: var(--lumen-ink)">3</span></div>
+<div class="wf wf-gold" style="padding: 14px; display: flex; flex-direction: column; gap: 10px">
+<span class="small strong">Envoi du dossier Alder</span>
+<span class="xs" style="color: var(--lumen-ink)">5 destinataires · pièces confidentielles</span>
+<span style="display: flex; gap: 6px"><span class="btn btn-primary btn-sm">Valider</span><span class="btn btn-ghost btn-sm">Relire</span></span>
+</div>
+<div class="wf wf-gold" style="padding: 14px; display: flex; flex-direction: column; gap: 10px">
+<span class="small strong">Arbitrage des chiffres 2025</span>
+<span class="xs" style="color: var(--lumen-ink)">Modèle ou comptes audités</span>
+<span style="display: flex; gap: 6px"><span class="btn btn-line btn-sm">Trancher</span></span>
+</div>
+<div class="wf wf-gold" style="padding: 14px; display: flex; flex-direction: column; gap: 10px">
+<span class="small strong">Sept relances de factures</span>
+<span class="xs" style="color: var(--lumen-ink)">Brouillons Outlook</span>
+<span style="display: flex; gap: 6px"><span class="btn btn-line btn-sm">Revoir en lot</span></span>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 10px" aria-labelledby="livre">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 0 4px"><h2 id="livre" class="eyebrow">Livré cette semaine</h2><span class="count">6</span></div>
+<div class="wf-soft" style="padding: 12px 14px; display: flex; align-items: center; gap: 10px"><span class="file-ic" style="width: 22px; height: 27px; font-size: 6px; padding-bottom: 3px">DOC</span><span class="small ellipsis">Synthèse des ventes S41</span></div>
+<div class="wf-soft" style="padding: 12px 14px; display: flex; align-items: center; gap: 10px"><span class="file-ic" style="width: 22px; height: 27px; font-size: 6px; padding-bottom: 3px">DOC</span><span class="small ellipsis">Entretiens clients T3</span></div>
+<div class="wf-soft" style="padding: 12px 14px; display: flex; align-items: center; gap: 10px"><span class="file-ic" style="width: 22px; height: 27px; font-size: 6px; padding-bottom: 3px">XLS</span><span class="small ellipsis">Benchmark tarifaire</span></div>
+<div class="wf-soft" style="padding: 12px 14px; display: flex; align-items: center; gap: 10px"><span class="file-ic" style="width: 22px; height: 27px; font-size: 6px; padding-bottom: 3px">DOC</span><span class="small ellipsis">Note Norvik</span></div>
+<span class="link-quiet" style="padding: 4px">Tout voir</span>
+</section>
+</div>
+</div>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["Clair","Sombre"],"default":"Clair"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { themeClass: this.props.theme === 'Sombre' ? 'dark' : '' };
+  }
+}
+</script>
+</body>
+</html>

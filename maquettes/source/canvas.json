@@ -1,30 +1,250 @@
 {
   "v": 3,
-  "createdOnFiles": { "v": 1, "at": "2026-10-04T19:12:42Z" },
-  "title": "Lumia — Maquettes",
-  "launch": { "view": "canvas" },
-  "pages": [],
+  "attachments": {},
   "boards": {
-    "Fondations.dc.html": { "x": 0, "y": 0, "w": 1440, "h": 1180, "title": "Fondations" },
-    "Connexion.dc.html": { "x": 0, "y": 1580, "w": 1440, "h": 900, "title": "Connexion", "expand": "fill", "is_interactive": true },
-    "Main.dc.html": { "x": 1520, "y": 1580, "w": 1440, "h": 900, "title": "Accueil", "expand": "fill", "is_interactive": true },
-    "Conversation.dc.html": { "x": 3040, "y": 1580, "w": 1440, "h": 900, "title": "Conversation · Chat", "expand": "fill", "is_interactive": true },
-    "Work.dc.html": { "x": 0, "y": 2880, "w": 1440, "h": 900, "title": "Work · tâche en cours", "expand": "fill", "is_interactive": true },
-    "Livrable.dc.html": { "x": 1520, "y": 2880, "w": 1440, "h": 900, "title": "Livrable · relecture", "expand": "fill", "is_interactive": true },
-    "WorkNuit.dc.html": { "x": 3040, "y": 2880, "w": 1440, "h": 900, "title": "Work · validation d’envoi (nuit)", "expand": "fill", "is_interactive": true },
-    "Projet.dc.html": { "x": 0, "y": 4180, "w": 1440, "h": 900, "title": "Projet", "expand": "fill", "is_interactive": true },
-    "Bibliotheque.dc.html": { "x": 1520, "y": 4180, "w": 1440, "h": 900, "title": "Bibliothèque", "expand": "fill", "is_interactive": true },
-    "Automatisations.dc.html": { "x": 3040, "y": 4180, "w": 1440, "h": 900, "title": "Automatisations", "expand": "fill", "is_interactive": true },
-    "Connecteurs.dc.html": { "x": 0, "y": 5480, "w": 1440, "h": 900, "title": "Connecteurs", "expand": "fill", "is_interactive": true },
-    "Administration.dc.html": { "x": 1520, "y": 5480, "w": 1440, "h": 900, "title": "Administration", "expand": "fill", "is_interactive": true },
-    "Palette.dc.html": { "x": 3040, "y": 5480, "w": 1440, "h": 900, "title": "Recherche ⌘K", "expand": "fill", "is_interactive": true },
-    "MobileAccueil.dc.html": { "x": 0, "y": 6780, "w": 390, "h": 844, "title": "Mobile · Accueil", "is_interactive": true },
-    "MobileValidation.dc.html": { "x": 510, "y": 6780, "w": 390, "h": 844, "title": "Mobile · Validation", "is_interactive": true },
-    "MobileConversation.dc.html": { "x": 1020, "y": 6780, "w": 390, "h": 844, "title": "Mobile · Conversation", "is_interactive": true }
+    "Administration.dc.html": {
+      "expand": "fill",
+      "h": 900,
+      "is_interactive": true,
+      "title": "Administration",
+      "w": 1440,
+      "x": 1520,
+      "y": 3900,
+      "page": "v1"
+    },
+    "Automatisations.dc.html": {
+      "expand": "fill",
+      "h": 900,
+      "is_interactive": true,
+      "title": "Automatisations",
+      "w": 1440,
+      "x": 3040,
+      "y": 2600,
+      "page": "v1"
+    },
+    "Bibliotheque.dc.html": {
+      "expand": "fill",
+      "h": 900,
+      "is_interactive": true,
+      "title": "Bibliothèque",
+      "w": 1440,
+      "x": 1520,
+      "y": 2600,
+      "page": "v1"
+    },
+    "Connecteurs.dc.html": {
+      "expand": "fill",
+      "h": 900,
+      "is_interactive": true,
+      "title": "Connecteurs",
+      "w": 1440,
+      "x": 0,
+      "y": 3900,
+      "page": "v1"
+    },
+    "Conversation.dc.html": {
+      "expand": "fill",
+      "h": 900,
+      "is_interactive": true,
+      "title": "Conversation · Chat",
+      "w": 1440,
+      "x": 1520,
+      "y": 0,
+      "page": "v1"
+    },
+    "Livrable.dc.html": {
+      "expand": "fill",
+      "h": 900,
+      "is_interactive": true,
+      "title": "Livrable · relecture",
+      "w": 1440,
+      "x": 1520,
+      "y": 1300,
+      "page": "v1"
+    },
+    "Main.dc.html": {
+      "expand": "fill",
+      "h": 900,
+      "is_interactive": true,
+      "title": "Accueil",
+      "w": 1440,
+      "x": 0,
+      "y": 0,
+      "page": "v1"
+    },
+    "Palette.dc.html": {
+      "expand": "fill",
+      "h": 900,
+      "is_interactive": true,
+      "title": "Recherche ⌘K",
+      "w": 1440,
+      "x": 3040,
+      "y": 3900,
+      "page": "v1"
+    },
+    "Projet.dc.html": {
+      "expand": "fill",
+      "h": 900,
+      "is_interactive": true,
+      "title": "Projet",
+      "w": 1440,
+      "x": 0,
+      "y": 2600,
+      "page": "v1"
+    },
+    "Work.dc.html": {
+      "expand": "fill",
+      "h": 900,
+      "is_interactive": true,
+      "title": "Work · tâche en cours",
+      "w": 1440,
+      "x": 0,
+      "y": 1300,
+      "page": "v1"
+    },
+    "WorkNuit.dc.html": {
+      "expand": "fill",
+      "h": 900,
+      "is_interactive": true,
+      "title": "Work · validation d’envoi (nuit)",
+      "w": 1440,
+      "x": 3040,
+      "y": 1300,
+      "page": "v1"
+    },
+    "PisteA_Accueil.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "A · Accueil — le bureau du jour",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "pistes"
+    },
+    "PisteA_Dossier.dc.html": {
+      "x": 1520,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "A · Work — le dossier",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "pistes"
+    },
+    "PisteB_Fil.dc.html": {
+      "x": 0,
+      "y": 1300,
+      "w": 1440,
+      "h": 900,
+      "title": "B · Accueil — le fil",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "pistes"
+    },
+    "PisteB_Chapitre.dc.html": {
+      "x": 1520,
+      "y": 1300,
+      "w": 1440,
+      "h": 900,
+      "title": "B · Work — le chapitre",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "pistes"
+    },
+    "PisteC_Atelier.dc.html": {
+      "x": 0,
+      "y": 2600,
+      "w": 1440,
+      "h": 900,
+      "title": "C · Accueil — l’atelier",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "pistes"
+    },
+    "PisteC_Studio.dc.html": {
+      "x": 1520,
+      "y": 2600,
+      "w": 1440,
+      "h": 900,
+      "title": "C · Work — le studio",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "pistes"
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-04T19:12:42Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas",
+    "page": "pistes"
+  },
+  "notes": {
+    "titreChat": {
+      "kind": "title1",
+      "maxW": 4480,
+      "text": "Chat",
+      "w": 240,
+      "x": 0,
+      "y": -300,
+      "page": "v1"
+    },
+    "titreEntreprise": {
+      "kind": "title1",
+      "maxW": 4480,
+      "text": "Entreprise",
+      "w": 240,
+      "x": 0,
+      "y": 3600,
+      "page": "v1"
+    },
+    "titreEspace": {
+      "kind": "title1",
+      "maxW": 4480,
+      "text": "Espace de travail",
+      "w": 240,
+      "x": 0,
+      "y": 2300,
+      "page": "v1"
+    },
+    "titreWork": {
+      "kind": "title1",
+      "maxW": 4480,
+      "text": "Work",
+      "w": 240,
+      "x": 0,
+      "y": 1000,
+      "page": "v1"
+    },
+    "titrePisteA": {
+      "x": 0,
+      "y": -280,
+      "text": "A · Le Bureau",
+      "kind": "title1",
+      "maxW": 2960,
+      "page": "pistes"
+    },
+    "titrePisteB": {
+      "x": 0,
+      "y": 1020,
+      "text": "B · Le Fil",
+      "kind": "title1",
+      "maxW": 2960,
+      "page": "pistes"
+    },
+    "titrePisteC": {
+      "x": 0,
+      "y": 2320,
+      "text": "C · L’Atelier",
+      "kind": "title1",
+      "maxW": 2960,
+      "page": "pistes"
+    }
   },
   "order": [
-    "Fondations.dc.html",
-    "Connexion.dc.html",
     "Main.dc.html",
     "Conversation.dc.html",
     "Work.dc.html",
@@ -36,17 +256,22 @@
     "Connecteurs.dc.html",
     "Administration.dc.html",
     "Palette.dc.html",
-    "MobileAccueil.dc.html",
-    "MobileValidation.dc.html",
-    "MobileConversation.dc.html"
+    "PisteA_Accueil.dc.html",
+    "PisteA_Dossier.dc.html",
+    "PisteB_Fil.dc.html",
+    "PisteB_Chapitre.dc.html",
+    "PisteC_Atelier.dc.html",
+    "PisteC_Studio.dc.html"
   ],
-  "notes": {
-    "titreFondations": { "x": 0, "y": -300, "text": "Fondations", "kind": "title1", "maxW": 4480 },
-    "titreChat": { "x": 0, "y": 1280, "text": "Chat", "kind": "title1", "maxW": 4480 },
-    "titreWork": { "x": 0, "y": 2580, "text": "Work", "kind": "title1", "maxW": 4480 },
-    "titreEspace": { "x": 0, "y": 3880, "text": "Espace de travail", "kind": "title1", "maxW": 4480 },
-    "titreEntreprise": { "x": 0, "y": 5180, "text": "Entreprise", "kind": "title1", "maxW": 4480 },
-    "titreMobile": { "x": 0, "y": 6480, "text": "Mobile", "kind": "title1", "maxW": 1410 }
-  },
-  "designSystems": []
+  "pages": [
+    {
+      "id": "pistes",
+      "name": "Pistes de structure"
+    },
+    {
+      "id": "v1",
+      "name": "Maquettes v1"
+    }
+  ],
+  "title": "Lumia — Maquettes"
 }
